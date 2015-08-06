@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="components/loader.js"></script>
+    <script src="js/ncmb-latest.min.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        var appKey    = "YOUR_APPKEY";
+        var clientKey = "YOUR_KEY";
+        
+        ///// Called when app launch
+        $(function() {
+          NCMB.initialize(appKey, clientKey);
+        });
+    
+        function startDemo() {
+            var TestClass = NCMB.Object.extend("TestClass");
+            var testClass = new TestClass();
+            testClass.set("message", "Hello, NCMB!");
+            testClass.save(null, {
+                success: function(savedObject) {
+                    // 保存完了後に実行される
+                    alert("New object created with objectId: " + savedObject.id);
+                },
+                error: function(savedObject, error) {
+                    // エラー時に実行される
+                    alert("Failed to create new object, with error code: " + error.message);
+                }
+            });   
+        }
+    </script>
+</head>
+<body>
+    <h1>NiftyCloud mobile backend!</h1>
+    <a class="button--large" onclick="startDemo()">Start Demo</a>
+</body>
+</html>
