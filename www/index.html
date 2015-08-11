@@ -19,7 +19,9 @@
         function startDemo() {
             var TestClass = NCMB.Object.extend("TestClass");
             var testClass = new TestClass();
-            testClass.set("message", "Hello, NCMB!");
+            var key   = "message";
+            var value = "Hello, NCMB!"; 
+            testClass.set(key, value);
             testClass.save(null, {
                 success: function(savedObject) {
                     // 保存完了後に実行される
@@ -36,5 +38,6 @@
 <body>
     <h1>NiftyCloud mobile backend!</h1>
     <a class="button--large" onclick="startDemo()">Start Demo</a>
+    <div>Touch Start Demo to save {"message":"Hello, NCMB!"} to mobile backend.</div>    
 </body>
 </html>
