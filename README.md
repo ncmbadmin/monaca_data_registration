@@ -5,8 +5,8 @@
 # Overview
 
 こちらはMonacaを利用して、mbaasサーバーにデーター保存するサンプルです。
-    Android, iOSアプリをHTML, JavaScriptで簡単に作れるツール[Monaca](https://ja.monaca.io/)
-    アプリのサーバー機能を簡単に作れるツール[Nifty cloud mobile backend](http://mb.cloud.nifty.com/)
+* Android, iOSアプリをHTML, JavaScriptで簡単に作れるツール[Monaca](https://ja.monaca.io/)
+* アプリのサーバー機能を簡単に作れるツール[Nifty cloud mobile backend](http://mb.cloud.nifty.com/)
 
 ![overview](readme-img/overview.JPG "概要図") 
 
