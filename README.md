@@ -90,10 +90,10 @@ success, errorではそれぞれ保存を行った時のcallbackを定義して�
 
 サンプルコードをカスタマイズする、key, value変数を変更していただきます。
 以下のドキュメントを参照し、データ保存・検索・プッシュ通知を入れることができる。
-[ドキュメント](http://mb.cloud.nifty.com/doc/current/)
-[ドキュメント・データストア](http://mb.cloud.nifty.com/doc/current/sdkguide/javascript/datastore.html)
-[ドキュメント・会員管理](http://mb.cloud.nifty.com/doc/current/sdkguide/javascript/user.html)
-[ドキュメント・プッシュ通知](http://mb.cloud.nifty.com/doc/current/sdkguide/javascript/push.html)
+* [ドキュメント](http://mb.cloud.nifty.com/doc/current/)
+* [ドキュメント・データストア](http://mb.cloud.nifty.com/doc/current/sdkguide/javascript/datastore.html)
+* [ドキュメント・会員管理](http://mb.cloud.nifty.com/doc/current/sdkguide/javascript/user.html)
+* [ドキュメント・プッシュ通知](http://mb.cloud.nifty.com/doc/current/sdkguide/javascript/push.html)
 
 
 ## Contributing
