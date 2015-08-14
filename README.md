@@ -80,7 +80,9 @@ success, errorではそれぞれ保存を行った時のcallbackを定義して�
   - mobile backendで利用登録する
     [Nifty cloud mobile backend](http://mb.cloud.nifty.com/)
 ![register](readme-img/register.JPG "登録画面") 
-  - mobile backendでアプリ作成する
+  - mobile backendでアプリ作成する: プロジェクトインポートを選択し、URLからインポートする。
+ URLがhttps://github.com/ncmbadmin/monaca_data_registration/archive/master.zip
+ で選択する。
 ![newapp](readme-img/newapp.JPG "新規アプリ作成") 
 
 * monacaで作成したアプリをmobile backendサーバーと連携させる 
