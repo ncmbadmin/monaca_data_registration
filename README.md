@@ -5,6 +5,8 @@
 # Overview
 
 こちらはMonacaを利用して、mbaasサーバーにデーター保存するサンプルです。
+    Android, iOSアプリをHTML, JavaScriptで簡単に作れるツール[Monaca](https://ja.monaca.io/)
+    アプリのサーバー機能を簡単に作れるツール[Nifty cloud mobile backend](http://mb.cloud.nifty.com/)
 
 ![overview](readme-img/overview.JPG "概要図") 
 
@@ -62,7 +64,7 @@ success, errorではそれぞれ保存を行った時のcallbackを定義して�
 
 * Monaca環境
 * Nifty cloud mobile backend Javascript SDK version 1.2.6
-ダウンロード：[Javascript SDK]()
+ダウンロード：[Javascript SDK](http://mb.cloud.nifty.com/doc/current/introduction/sdkdownload_javascript.html)
 
 ## Installation
 
