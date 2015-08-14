@@ -73,12 +73,14 @@ success, errorではそれぞれ保存を行った時のcallbackを定義して�
   - monacaで新規プロジェクトを作成する
 ![create](readme-img/monaca_new_project.JPG "新規プロジェクト")   
 ![create](readme-img/monaca_new_project_2.JPG "新規プロジェクト")   
+
 * mobile backendでアプリ作成する
   - mobile backendで利用登録する
     [Nifty cloud mobile backend](http://mb.cloud.nifty.com/)
 ![register](readme-img/register.JPG "登録画面") 
   - mobile backendでアプリ作成する
 ![newapp](readme-img/newapp.JPG "新規アプリ作成") 
+
 * monacaで作成したアプリをmobile backendサーバーと連携させる 
   - monacaでアプリキー、クライアントキーを設定し、初期化を行う
 ![initialize2](readme-img/appKeyClientKey.JPG "初期化")   
