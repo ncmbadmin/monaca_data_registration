@@ -1,10 +1,10 @@
-# Monaca x NIFTYCLOUD mobile backend データー登録サンプル
+# Monaca x NIFTYCLOUD mobile backend データ登録サンプル
 
 ===
 
 # Overview
 
-こちらはMonacaを利用して、mbaasサーバーにデーター保存するサンプルです。
+こちらはMonacaを利用して、mbaasサーバーにデータ保存するサンプルです。
 * Android, iOSアプリをHTML, JavaScriptで簡単に作れるツール[Monaca](https://ja.monaca.io/)
 * アプリのサーバー機能を簡単に作れるツール[Nifty cloud mobile backend](http://mb.cloud.nifty.com/)
 
@@ -14,7 +14,7 @@
 
 MonacaでgithubのURLをインポートし、
 アプリキーとクライントキーを設定し、StartDemoボタンをおすと
-mobile backend画面では{"message":"Hello, NCMB!"}データーが登録されることを確認します。
+mobile backend画面では{"message":"Hello, NCMB!"}データが登録されることを確認します。
 
 ![demo1](readme-img/demo1.JPG "起動画面") 
 ![demo2](readme-img/demo2.JPG "登録完了") 
@@ -51,13 +51,13 @@ mobile backend画面では{"message":"Hello, NCMB!"}データーが登録され�
         }()
 ```
 上記のコードでキーを指定し、NCMB.initialize(appKey, clientKey), mBaaSサーバーと連携を行います。
-"TestClass"という名前を設定しデータークラスを指定します。testClassオブジェクトを利用して、データーを操作します。
+"TestClass"という名前を設定しデータクラスを指定します。testClassオブジェクトを利用して、データを操作します。
 ```
         var key   = "message";
         var value = "Hello, NCMB!"; 
         testClass.set(key, value);
 ```
-testClassのデーターを指定し、key, valueを設定した上、save()を実行すると、非同期データーが保存されます。
+testClassのデータを指定し、key, valueを設定した上、save()を実行すると、非同期データが保存されます。
 success, errorではそれぞれ保存を行った時のcallbackを定義してあります。
 
 ## Requirement
