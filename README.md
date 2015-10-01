@@ -8,7 +8,7 @@ Monacaを用いて作ったアプリから、mobile backendへデータ登録・
 * HTML/CSS/JavaScriptでマルチプラットフォーム（iOS/Android/Windowsなど）にアプリを開発できる統合開発環境[Monaca](https://ja.monaca.io/)
 * スマホアプリのサーバ側機能（プッシュ通知、会員管理、DBなど）をサーバ開発不要で実装できる[NIFTY Cloud mobile backend](http://mb.cloud.nifty.com/?utm_source=community&utm_medium=referral&utm_campaign=sample_monaca_data_registration)
 
-![overview](readme-img/overview.JPG "概要図") 
+![overview](readme-img/overview.JPG "概要図")
 
 ## Demo
 
@@ -19,8 +19,39 @@ MonacaでgithubのURL（https://github.com/ncmbadmin/monaca_data_registration/ar
 mobile backendのダッシュボードの「TestClass」クラスを開くことで、
 「message」フィールドに「Hello, NCMB!」が保存されていることが確認できます。
 
-![demo1](readme-img/demo1.JPG "起動画面") 
-![demo2](readme-img/demo2.JPG "登録完了") 
+![demo1](readme-img/demo1.JPG "起動画面")
+![demo2](readme-img/demo2.JPG "登録完了")
+
+## Requirement
+
+* Monaca環境
+* Nifty cloud mobile backend Javascript SDK version 1.2.6　ダウンロード：[Javascript SDK](http://mb.cloud.nifty.com/doc/1.2.6/introduction/sdkdownload_javascript.html?utm_source=community&utm_medium=referral&utm_campaign=sample_monaca_data_registration)
+* ※version 2.0.0はまだ準備中です。
+
+## Installation
+
+* Monacaで新規アプリ作成し、プロジェクトをインポートする。
+  - Monaca 利用登録
+    [Monaca](https://ja.monaca.io/)
+![Monaca](readme-img/monaca.JPG "新規プロジェクト")    
+  - Monacaで新規プロジェクトを作成し、プロジェクトのインポートを選択します。
+![create](readme-img/monaca_new_project.JPG "新規プロジェクト")   
+  - 「URLからインポートする」を選択し、URLに https://github.com/ncmbadmin/monaca_data_registration/archive/master.zip を指定します。
+![create](readme-img/monaca_new_project_2.JPG "新規プロジェクト")   
+
+* mobile backendでアプリ作成する
+  - mobile backend 利用登録
+    [NIFTY Cloud mobile backend](http://mb.cloud.nifty.com/?utm_source=community&utm_medium=referral&utm_campaign=sample_monaca_data_registration)
+![register](readme-img/register.JPG "登録画面")
+  - mobile backendでアプリ作成する
+![newapp](readme-img/newapp.JPG "新規アプリ作成")
+
+* Monacaで作成したアプリをmobile backendサーバーと連携させる
+  - アプリケーションキー、クライアントキーを設定し、初期化を行う
+![initialize2](readme-img/appKeyClientKey.JPG "初期化")   
+![initialize](readme-img/appKeyClientKey_setting.JPG "初期化")
+  - Monacaで動作確認する
+![demo](readme-img/demo2.JPG "動作確認")
 
 ## Description
 
@@ -29,17 +60,17 @@ mobile backendのダッシュボードの「TestClass」クラスを開くこと
 ```JavaScript
         var appKey    = "YOUR_APPKEY";
         var clientKey = "YOUR_KEY";
-        
+
         ///// Called when app launch
         $(function() {
           NCMB.initialize(appKey, clientKey);
         });
-    
+
         function startDemo() {
             var TestClass = NCMB.Object.extend("TestClass");
             var testClass = new TestClass();
             var key   = "message";
-            var value = "Hello, NCMB!"; 
+            var value = "Hello, NCMB!";
             testClass.set(key, value);
             testClass.save(null, {
                 success: function(savedObject) {
@@ -60,41 +91,11 @@ NCMB.initialize(appKey, clientKey)　でmBaaSサーバと連携を行います�
 testClassオブジェクトを利用して、データを操作できます。
 ```
         var key   = "message";
-        var value = "Hello, NCMB!"; 
+        var value = "Hello, NCMB!";
         testClass.set(key, value);
 ```
 testClassオブジェクトに対してkey, valueを設定した上でsave()を実行すると、非同期にてデータが保存されます。
 また、データ保存に成功・失敗したときのcallbackを、ぞれぞれsuccess, errorで定義してあります。
-
-## Requirement
-
-* Monaca環境
-* Nifty cloud mobile backend Javascript SDK version 1.2.6　ダウンロード：[Javascript SDK](http://mb.cloud.nifty.com/doc/current/introduction/sdkdownload_javascript.html?utm_source=community&utm_medium=referral&utm_campaign=sample_monaca_data_registration)
-
-## Installation
-
-* Monacaで新規アプリ作成し、プロジェクトをインポートする。
-  - Monaca 利用登録
-    [Monaca](https://ja.monaca.io/)
-![Monaca](readme-img/monaca.JPG "新規プロジェクト")    
-  - Monacaで新規プロジェクトを作成し、プロジェクトのインポートを選択します。
-![create](readme-img/monaca_new_project.JPG "新規プロジェクト")   
-  - 「URLからインポートする」を選択し、URLに https://github.com/ncmbadmin/monaca_data_registration/archive/master.zip を指定します。
-![create](readme-img/monaca_new_project_2.JPG "新規プロジェクト")   
-
-* mobile backendでアプリ作成する
-  - mobile backend 利用登録
-    [NIFTY Cloud mobile backend](http://mb.cloud.nifty.com/?utm_source=community&utm_medium=referral&utm_campaign=sample_monaca_data_registration)
-![register](readme-img/register.JPG "登録画面") 
-  - mobile backendでアプリ作成する
-![newapp](readme-img/newapp.JPG "新規アプリ作成") 
-
-* Monacaで作成したアプリをmobile backendサーバーと連携させる 
-  - アプリケーションキー、クライアントキーを設定し、初期化を行う
-![initialize2](readme-img/appKeyClientKey.JPG "初期化")   
-![initialize](readme-img/appKeyClientKey_setting.JPG "初期化") 
-  - Monacaで動作確認する
-![demo](readme-img/demo2.JPG "動作確認") 
 
 ## Usage
 
