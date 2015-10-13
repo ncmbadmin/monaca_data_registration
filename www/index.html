@@ -10,34 +10,29 @@
     <script>
         var appKey    = "YOUR_APPKEY";
         var clientKey = "YOUR_KEY";
-        
-        ///// Called when app launch
-        $(function() {
-          NCMB.initialize(appKey, clientKey);
-        });
-    
+        var ncmb = new NCMB(appKey, clientKey);
+
         function startDemo() {
-            var TestClass = NCMB.Object.extend("TestClass");
+            var TestClass = ncmb.DataStore("TestClass");
             var testClass = new TestClass();
             var key   = "message";
-            var value = "Hello, NCMB!"; 
+            var value = "Hello, NCMB!";
             testClass.set(key, value);
-            testClass.save(null, {
-                success: function(savedObject) {
+            testClass.save()
+                .then(function() {
                     // 保存完了後に実行される
-                    alert("New object created with objectId: " + savedObject.id);
-                },
-                error: function(savedObject, error) {
+                    alert("New object created with objectId: " + testClass.objectId);
+                })
+                .catch(function(error) {
                     // エラー時に実行される
-                    alert("Failed to create new object, with error code: " + error.message);
-                }
-            });   
+                    alert("Failed to create new object, with error code: " + error.text);
+                });
         }
     </script>
 </head>
 <body>
     <h1>NiftyCloud mobile backend!</h1>
     <a class="button--large" onclick="startDemo()">Start Demo</a>
-    <div>Touch Start Demo to save {"message":"Hello, NCMB!"} to mobile backend.</div>    
+    <div>Touch Start Demo to save {"message":"Hello, NCMB!"} to mobile backend.</div>
 </body>
 </html>
