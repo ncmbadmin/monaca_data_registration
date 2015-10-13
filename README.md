@@ -25,8 +25,7 @@ mobile backendのダッシュボードの「TestClass」クラスを開くこと
 ## Requirement
 
 * Monaca環境
-* Nifty cloud mobile backend Javascript SDK version 1.2.6　ダウンロード：[Javascript SDK](http://mb.cloud.nifty.com/doc/1.2.6/introduction/sdkdownload_javascript.html?utm_source=community&utm_medium=referral&utm_campaign=sample_monaca_data_registration)
-* ※version 2.0.0はまだ準備中です。
+* Nifty cloud mobile backend Javascript SDK version 2.0.0　ダウンロード：[Javascript SDK](http://http://mb.cloud.nifty.com/doc/current/introduction/sdkdownload_javascript.html?utm_source=community&utm_medium=referral&utm_campaign=sample_monaca_data_registration)
 
 ## Installation
 
@@ -58,34 +57,29 @@ mobile backendのダッシュボードの「TestClass」クラスを開くこと
 * コードの説明
 
 ```JavaScript
-        var appKey    = "YOUR_APPKEY";
-        var clientKey = "YOUR_KEY";
+var appKey    = "YOUR_APPKEY";
+var clientKey = "YOUR_KEY";
+var ncmb = new NCMB(appKey, clientKey);
 
-        ///// Called when app launch
-        $(function() {
-          NCMB.initialize(appKey, clientKey);
+function startDemo() {
+    var TestClass = ncmb.DataStore("TestClass");
+    var testClass = new TestClass();
+    var key   = "message";
+    var value = "Hello, NCMB!";
+    testClass.set(key, value);
+    testClass.save()
+        .then(function() {
+            // 保存完了後に実行される
+            alert("New object created with objectId: " + testClass.objectId);
+        })
+        .catch(function(error) {
+            // エラー時に実行される
+            alert("Failed to create new object, with error code: " + error.text);
         });
-
-        function startDemo() {
-            var TestClass = NCMB.Object.extend("TestClass");
-            var testClass = new TestClass();
-            var key   = "message";
-            var value = "Hello, NCMB!";
-            testClass.set(key, value);
-            testClass.save(null, {
-                success: function(savedObject) {
-                    // 保存完了後に実行される
-                    alert("New object created with objectId: " + savedObject.id);
-                },
-                error: function(savedObject, error) {
-                    // エラー時に実行される
-                    alert("Failed to create new object, with error code: " + error.message);
-                }
-            });   
-        }()
+}
 ```
 上記のコードでアプリケーションキーとクライアントキーを指定し、
-NCMB.initialize(appKey, clientKey)　でmBaaSサーバと連携を行います。
+NCMB(appKey, clientKey)　でmBaaSサーバと連携を行います。
 
 "TestClass"という名前を設定してデータクラスを指定したあと、
 testClassオブジェクトを利用して、データを操作できます。
