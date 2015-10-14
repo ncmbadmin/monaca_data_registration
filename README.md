@@ -89,7 +89,7 @@ testClassオブジェクトを利用して、データを操作できます。
         testClass.set(key, value);
 ```
 testClassオブジェクトに対してkey, valueを設定した上でsave()を実行すると、非同期にてデータが保存されます。
-また、データ保存に成功・失敗したときのcallbackを、ぞれぞれsuccess, errorで定義してあります。
+また、データ保存に成功・失敗したとき実装はthen(), catch()で定義してあります。
 
 ## Usage
 
