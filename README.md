@@ -2,12 +2,11 @@
 
 # 概要
 
-Monacaを用いて作ったアプリとmobile backendを連携して、mbaasサーバーにデーター保存するサンプルです。
-Monacaとmbaasを初めて利用する方にお勧めのサンプルです。
-5分ほどのmonacaを利用してデーター登録できるようなります。にするサンプルGithubに公開しました。
-プロジェクトをインポートし、アプリキー、クライアントキーを変更するだけで、サーバにデーター登録することができます！
-Monacaを使ってサーバーにデーター保存する機能を、ぜひご活用ください！
-例えば、スコア保存、スケジュール管理アプリのタスク保存など＾＾！
+Monacaを用いて作成したアプリとmobile backendを連携して、mbaasサーバーにデーター保存するサンプルです。
+Monacaとmbaasを初めて利用する方にお勧めのサンプルです。５分ほどの作業でmbaasにデーター登録ができるようなります。
+プロジェクトをインポートし、アプリキー、クライアントキーを変更するだけで、サーバーにデーター登録することができます！
+Monacaを使ってサーバーにデーター保存する機能は、スコアの保存、スケジュール管理アプリのタスク保存などにご利用できます。
+ぜひご活用ください＾＾！
 
 * Android, iOSアプリをHTML, JavaScriptで簡単に作れるツール[Monaca](https://ja.monaca.io/)
 * アプリのサーバー機能を簡単に作れるツール[Nifty cloud mobile backend](http://mb.cloud.nifty.com/)
@@ -20,8 +19,9 @@ Monacaを使ってサーバーにデーター保存する機能を、ぜひご�
 ## 準備
 
 * Monaca環境
-* Nifty cloud mobile backend Javascript SDK version 2.1.1　ダウンロード：[Javascript SDK](http://http://mb.cloud.nifty.com/doc/current/introduction/sdkdownload_javascript.html?utm_source=community&utm_medium=referral&utm_campaign=sample_monaca_data_registration)
-今回プロジェクトに組み込まれた状態でインポートしますので、自分でインストールする必要がありません。参考のため、インポート方法は下に説明します！
+* Nifty cloud mobile backend Javascript SDK version 2.1.3　ダウンロード：[Javascript SDK](https://github.com/NIFTYCloud-mbaas/ncmb_js/releases)<br>
+今回はプロジェクトに組み込まれた状態でインポートしますので、インストールする必要がありません。<br>
+参考のため、インポート方法は下記でご説明致します！
 
 ## 手順
 
@@ -94,17 +94,17 @@ testClassオブジェクトを利用して、データを操作できます。
         testClass.set(key, value);
 ```
 testClassオブジェクトに対してkey, valueを設定した上でsave()を実行すると、非同期にてデータが保存されます。
-また、データ保存に成功・失敗したとき実装はthen(), catch()で定義してあります。
+また、データ保存に成功・失敗したときの実装はthen(), catch()で定義してあります。
 
 # SDKインストール方法（済み）
 
-最新SDKなっていない場合、以下ぜひご参考いただき、ご自身SDKを更新ください。
+最新SDKになっていない場合は、以下ご参考いただき、ご自身でSDKを更新してください。
 ![jssdk_import_monaca.001.jpeg](https://qiita-image-store.s3.amazonaws.com/0/18698/f6c95bce-17ce-a4f7-8977-47e31bf82acd.jpeg)
 
 ## 参考
 
-サンプルコードをカスタマイズする、key, value変数を変更していただきます。
-以下のドキュメントを参照し、データ保存・検索・プッシュ通知を入れることができる。
+以下のドキュメントを参照して、サンプルコードをカスタマイズすることができます。
+データ保存・検索・プッシュ通知などを行うことができます。
 * [ドキュメント](http://mb.cloud.nifty.com/doc/current/)
 * [ドキュメント・データストア](http://mb.cloud.nifty.com/doc/current/datastore/basic_usage_monaca.html)
 * [ドキュメント・会員管理](http://mb.cloud.nifty.com/doc/current/user/basic_usage_monaca.html)
