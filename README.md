@@ -120,8 +120,6 @@ function startDemo() {
             alert("Failed to create new object, with error code: " + error.text);
     });
 }
-
-@end
 ```
 #### SDKのインストール方法
 SDKが最新になっていない場合は、以下画像をご参考いただき、ご自身でSDKを更新してください
