@@ -33,16 +33,16 @@ Android
 
 * Register membership (free) from the above link. When you finished registration, then login and the "Create new App" screen will appear as shown below, then you create the application.
 
-![Image3](/readme-img/003.png)
+![Image3](/readme-img/003_en.png)
 
 * When the application is created, the screen will look like the below figure.
 * These two kinds of API keys (application key and client key) are used to link the [Nifty Cloud mobile backend](http://mb.cloud.nifty.com/) to the iOS application that created by Xcode.
 
-![Image4](/readme-img/004.png)
+![Image4](/readme-img/004_en.png)
 
 * After, let's confirm the place where the data will be saved.
 
-![Image5](/readme-img/005.png)
+![Image5](/readme-img/005_en.png)
 
 ### 2. Import project to Monaca and launch application
 
@@ -66,7 +66,7 @@ Android
 * When the project is opened, edit the index.html
 * Paste the API key you confirmed on the dashboard of [Nifty Cloud mobile backend](http://mb.cloud.nifty.com/) earlier
 
-![Image7](/readme-img/007.png)
+![Image7](/readme-img/007_en.png)
 
 * Overwrite each `YOUR_NCMB_APPLICATION_KEY` and `YOUR_NCMB_CLIENT_KEY` part
 * At this time, be careful not to clear double quotes （`"`）!
@@ -84,7 +84,7 @@ Android
 * If saving was failed: "`Failed to create new object, with error code: ******`"
 * ObjectId is the ID automatically allocated when saving data
 * If an error occurs, you can confirm the error content from [here](http://mb.cloud.nifty.com/doc/current/rest/common/error.html)
-![Image1](/readme-img/001.png)
+![Image1](/readme-img/001_en.png)
 
 * If saving successfully, let's check "Datastore" from the dashboard of [Nifty Cloud mobile backend](http://mb.cloud.nifty.com/)!
 * `TestClass` that used for saving is created, and you can confirm data in it
