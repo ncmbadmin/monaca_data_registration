@@ -1,5 +1,5 @@
 # 【Monaca】 Let's try nifty cloud mobile backend!
-![Image1](/readme-img/001.png)
+![Image1](/readme-img/001_en.png)
 
 ## Overview
 * This is a sample application that uses Monaca to register data to [Nifty Cloud mobile backend](http://mb.cloud.nifty.com/)
