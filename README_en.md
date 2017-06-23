@@ -125,7 +125,7 @@ function startDemo() {
 #### How to install SDK
 If the SDK is not up to date, please refer to the image below and update your SDK yourself
 
-![Image9](/readme-img/009.png)
+![Image9](/readme-img/009_en.png)
 
 ## Reference
 * [Document](http://mb.cloud.nifty.com/doc/current/#/Monaca) of mBaaS(monaca)
