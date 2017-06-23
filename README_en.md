@@ -53,7 +53,7 @@ Android
 1. Project:__[monaca_data_registration](https://github.com/NIFTYCloud-mbaas/monaca_data_registration/archive/master.zip)__
 1. When click "Import" button, the imported project will be created
 
-![Image6](/readme-img/006.png)
+![Image6](/readme-img/006_en.png)
 
 * Open the created project by clicking "Open"
 * The project is opened and the preview screen is displayed
