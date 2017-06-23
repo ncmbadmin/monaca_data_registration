@@ -31,7 +31,23 @@ Android
 ## Procedure
 ### 1. Register membership of [Nifty Cloud mobile backend](http://mb.cloud.nifty.com/) and login → Create application
 
-* Register membership (free) from the above link. When you finished registration, then login and the "Create new App" screen will appear as shown below, then you create the application.
+* Click on the above link to Register membership (free). The "Free ID Registration" screen will appear as shown below.
+
+![AccountRegisterImage1](/readme-img/account_register_001.png)
+
+* Enter account's mandatory information, then click on "Register" button, the "Confirmation of registration contents" screen will appear as shown below.
+
+![AccountRegisterImage2](/readme-img/account_register_002.png)
+
+* When you finished confirm your information, click on button to register information. The "Completion of registration" screen will appear, you can see your @niftyID that has been issued.
+
+![AccountRegisterImage3](/readme-img/account_register_003.png)
+
+* Then click on "Log in" button to move to login page.
+
+![AccountRegisterImage4](/readme-img/account_register_004.png)
+
+* Enter your account information, then login and the "Create new App" screen will appear as shown below, then you create the application.
 
 ![Image3](/readme-img/003_en.png)
 
