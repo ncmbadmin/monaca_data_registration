@@ -12,7 +12,7 @@ This time, I will experience the data store feature.
 
 Note 1: For detail information please visit [here](http://mb.cloud.nifty.com/price.htm)
 
-![Image2](/readme-img/002.png)
+![Image2](/readme-img/002_en.png)
 
 ## Operating environment
 iOS
