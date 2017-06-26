@@ -7,7 +7,7 @@
 * By this simple operation, you can experience the  [Nifty Cloud mobile backend](http://mb.cloud.nifty.com/)
 * Remember to switch language to English when you first access the control panel.
 
-[Image_english_conpanel](http://info.biz.nifty.com/mb/20170620/inforblog_engconpane.jpg)
+![Image_english_conpanel](/readme-img/inforblog_engconpane.jpg)
 
 ## What is Nifty Cloud mobile backend?
 It is a cloud service that the back-end functionalities of smartphone app (push notification, data store, membership management, file store, SNS cooperation, location information search and script) is unnecessary development, and moreover, the basic **free** (Note 1) can be used in!
