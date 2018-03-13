@@ -34,19 +34,22 @@ Android
 ## Procedure
 ### 1. Register membership of [NIFCLOUD mobile backend](http://mb.cloud.nifty.com/en) and login → Create application
 
-* Click on the above link to Register membership (free). The "Free ID Registration" screen will appear as shown below.
+* Click on the above link to `Sign up with SNS account`. The "Signup Account (Free)" screen will appear as shown below.
 
 ![AccountRegisterImage1](./readme-img/account_register_001.png)
 
-* Enter account's mandatory information, then click on "Register" button, the "Confirmation of registration contents" screen will appear as shown below.
+* Please select your SNS account (Facebook / Twitter / Google).
 
 ![AccountRegisterImage2](./readme-img/account_register_002.png)
 
-* When you finished confirm your information, click on button to register information. The "Completion of registration" screen will appear, you can see your @niftyID that has been issued.
+* When you finished integration your SNS account, please input your email address.
+* If you belong to the company, please input your company informations.
+* Then click on `Send confirmation email` button  to authenticate your account by email.
 
 ![AccountRegisterImage3](./readme-img/account_register_003.png)
 
-* Then click on "Log in" button to move to login page.
+* Then Log in from your mail to move to Term of service.
+* Please complete your account registration after agreeing it.
 
 ![AccountRegisterImage4](./readme-img/account_register_004.png)
 
