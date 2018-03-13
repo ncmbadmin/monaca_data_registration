@@ -1,17 +1,17 @@
-# 【Monaca】ニフティクラウドmobile backend を体験しよう！
-![画像1](/readme-img/001.png)
+# 【Monaca】ニフクラ mobile backend を体験しよう！
+![画像1](./readme-img/001.png)
 
 ## 概要
-* Monacaを利用して、[ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)へデータ登録を行うサンプルアプリです
+* Monacaを利用して、[ニフクラ mobile backend](http://mb.cloud.nifty.com/)へデータ登録を行うサンプルアプリです
  * 「Start Demo」ボタンをタップするとクラウドにデータが上がります★
-* 簡単な操作ですぐに [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)を体験いただけます
+* 簡単な操作ですぐに [ニフクラ mobile backend](http://mb.cloud.nifty.com/)を体験いただけます
 
-## ニフティクラウドmobile backendって何？？
+## ニフクラ mobile backendって何？？
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！今回はデータストアを体験します
 
 注1：詳しくは[こちら](http://mb.cloud.nifty.com/price.htm)をご覧ください
 
-![画像2](/readme-img/002.png)
+![画像2](./readme-img/002.png)
 
 ## 動作環境
 iOS
@@ -28,20 +28,20 @@ Android
 
 
 ## 手順
-### 1. [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の会員登録とログイン→アプリ作成
+### 1. [ニフクラ mobile backend](http://mb.cloud.nifty.com/)の会員登録とログイン→アプリ作成
 
 * 上記リンクから会員登録（無料）をします。登録ができたらログインをすると下図のように「アプリの新規作成」画面が出るのでアプリを作成します
 
-![画像3](/readme-img/003.png)
+![画像3](./readme-img/003.png)
 
 * アプリ作成されると下図のような画面になります
-* この２種類のAPIキー（アプリケーションキーとクライアントキー）はXcodeで作成するiOSアプリに[ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)を紐付けるために使用します
+* この２種類のAPIキー（アプリケーションキーとクライアントキー）はXcodeで作成するiOSアプリに[ニフクラ mobile backend](http://mb.cloud.nifty.com/)を紐付けるために使用します
 
-![画像4](/readme-img/004.png)
+![画像4](./readme-img/004.png)
 
 * この後動作確認でデータが保存される場所も確認しておきましょう
 
-![画像5](/readme-img/005.png)
+![画像5](./readme-img/005.png)
 
 ### 2. Monacaでプロジェクトインポートしてアプリを起動
 
@@ -52,7 +52,7 @@ Android
 1. プロジェクト：__[monaca_data_registration](https://github.com/NIFTYCloud-mbaas/monaca_data_registration/archive/master.zip)__
 1. 「インポート」をクリックするとインポートされたプロジェクトが作成されます
 
-![画像6](/readme-img/006.png)
+![画像6](./readme-img/006.png)
 
 * 作成されたプロジェクトを「開く」をクリックして開きます
 * プロジェクトが開き、プレビュー画面が表示されます
@@ -63,9 +63,9 @@ Android
 ### 3. APIキーの設定
 
 * プロジェクトが開いたら、index.htmlを編集します
-* 先程[ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)のダッシュボード上で確認したAPIキーを貼り付けます
+* 先程[ニフクラ mobile backend](http://mb.cloud.nifty.com/)のダッシュボード上で確認したAPIキーを貼り付けます
 
-![画像7](/readme-img/007.png)
+![画像7](./readme-img/007.png)
 
 * それぞれ`YOUR_NCMB_APPLICATION_KEY`と`YOUR_NCMB_CLIENT_KEY`の部分を書き換えます
  * このとき、ダブルクォーテーション（`"`）を消さないように注意してください！
@@ -75,7 +75,7 @@ Android
 * スマートフォン端末でMonacaデバッガーを立ち上げてログインします。
 * 最初に設定した、アプリ名（例：DBDEMO）を選択してアプリを起動させてください。
 
-![画像8](/readme-img/008.png)
+![画像8](./readme-img/008.png)
 
 * 起動したら「Start Demo」ボタンをタップします
 * 動作結果が画面に表示されます
@@ -83,9 +83,9 @@ Android
  * 保存に失敗した場合：「`Failed to create new object, with error code: ******`」
 * objectIdはデータを保存したときに自動で割り振られるIDです
 * エラーが発生した場合は、[こちら](http://mb.cloud.nifty.com/doc/current/rest/common/error.html)よりエラー内容を確認いただけます
-![画像1](/readme-img/001.png)
+![画像1](./readme-img/001.png)
 
-* 保存に成功したら、[ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)のダッシュボードから「データストア」を確認してみましょう！
+* 保存に成功したら、[ニフクラ mobile backend](http://mb.cloud.nifty.com/)のダッシュボードから「データストア」を確認してみましょう！
 * `TestClass`という保存用クラスが作成され、その中にデータが確認できます
 
 ## 解説
@@ -124,7 +124,7 @@ function startDemo() {
 #### SDKのインストール方法
 SDKが最新になっていない場合は、以下画像をご参考いただき、ご自身でSDKを更新してください
 
-![画像9](/readme-img/009.png)
+![画像9](./readme-img/009.png)
 
 ## 参考
 * mBaaS(monaca)の[ドキュメント](http://mb.cloud.nifty.com/doc/current/#/Monaca)
