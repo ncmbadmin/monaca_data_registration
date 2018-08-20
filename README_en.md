@@ -1,15 +1,15 @@
-# 【Monaca】 Let's try nifty cloud mobile backend!
+# 【Monaca】 Let's try NIFCloud mobile backend!
 ![Image1](/readme-img/001_en.png)
 
 ## Overview
-* This is a sample application that uses Monaca to register data to [Nifty Cloud mobile backend](https://mbaas.nifcloud.com/)
+* This is a sample application that uses Monaca to register data to [NIFCloud mobile backend](https://mbaas.nifcloud.com/)
 * When you tap "Start Demo" button, data will be registered to the cloud ★
-* By this simple operation, you can experience the  [Nifty Cloud mobile backend](https://mbaas.nifcloud.com/)
+* By this simple operation, you can experience the  [NIFCloud mobile backend](https://mbaas.nifcloud.com/)
 * Remember to switch language to English when you first access the control panel.
 
 ![Image_english_conpanel](/readme-img/inforblog_engconpane.jpg)
 
-## What is Nifty Cloud mobile backend?
+## What is NIFCloud mobile backend?
 It is a cloud service that the back-end functionalities of smartphone app (push notification, data store, membership management, file store, SNS cooperation, location information search and script) is unnecessary development, and moreover, the basic **free** (Note 1) can be used in!
 This time, I will experience the data store feature.
 
@@ -32,7 +32,7 @@ Android
 
 
 ## Procedure
-### 1. Register membership of [Nifty Cloud mobile backend](https://mbaas.nifcloud.com/) and login → Create application
+### 1. Register membership of [NIFCloud mobile backend](https://mbaas.nifcloud.com/) and login → Create application
 
 * Click on the above link to Register membership (free). The "Free ID Registration" screen will appear as shown below.
 
@@ -55,7 +55,7 @@ Android
 ![Image3](/readme-img/003_en.png)
 
 * When the application is created, the screen will look like the below figure.
-* These two kinds of API keys (application key and client key) are used to link the [Nifty Cloud mobile backend](https://mbaas.nifcloud.com/) to the iOS application that created by Xcode.
+* These two kinds of API keys (application key and client key) are used to link the [NIFCloud mobile backend](https://mbaas.nifcloud.com/) to the iOS application that created by Xcode.
 
 ![Image4](/readme-img/004_en.png)
 
@@ -83,7 +83,7 @@ Android
 ### 3. Setting the API key
 
 * When the project is opened, edit the index.html
-* Paste the API key you confirmed on the dashboard of [Nifty Cloud mobile backend](https://mbaas.nifcloud.com/) earlier
+* Paste the API key you confirmed on the dashboard of [NIFCloud mobile backend](https://mbaas.nifcloud.com/) earlier
 
 ![Image7](/readme-img/007_en.png)
 
@@ -105,7 +105,7 @@ Android
 * If an error occurs, you can confirm the error content from [here](https://mbaas.nifcloud.com/doc/current/rest/common/error.html)
 ![Image1](/readme-img/001_en.png)
 
-* If saving successfully, let's check "Datastore" from the dashboard of [Nifty Cloud mobile backend](https://mbaas.nifcloud.com/)!
+* If saving successfully, let's check "Datastore" from the dashboard of [NIFCloud mobile backend](https://mbaas.nifcloud.com/)!
 * `TestClass` that used for saving is created, and you can confirm data in it
 
 ## Explanation
