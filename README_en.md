@@ -69,7 +69,7 @@ Android
 1. Click "Import Project" at the top left
 1. Enter "Project Name" (for example: "DBDEMO")
 1. Check "Import from URL" in "Import Method", then right click to copy and paste the following link.
-1. Project:__[https://github.com/NIFTYCloud-mbaas/monaca_data_registration/archive/master.zip](https://github.com/NIFTYCloud-mbaas/monaca_data_registration/archive/master.zip)__
+1. Project:__[https://github.com/NIFCloud-mbaas/monaca_data_registration/archive/master.zip](https://github.com/NIFCloud-mbaas/monaca_data_registration/archive/master.zip)__
 1. When click "Import" button, the imported project will be created
 
 ![Image6](/readme-img/006_en.png)
@@ -149,6 +149,6 @@ If the SDK is not up to date, please refer to the image below and update your SD
 ## Reference
 * [Document](http://mb.cloud.nifty.com/doc/current/#/Monaca) of mBaaS(monaca)
 * We also have the same content for [iOS · Android] version
- * [Objective-C]https://github.com/NIFTYCloud-mbaas/iOS-Objective-C_DB_DEMO
- * [Swift]https://github.com/NIFTYCloud-mbaas/iOS-Swift_DB_DEMO
- * [Android]https://github.com/NIFTYCloud-mbaas/android_data_demo
+ * [Objective-C]https://github.com/NIFCloud-mbaas/iOS-Objective-C_DB_DEMO
+ * [Swift]https://github.com/NIFCloud-mbaas/iOS-Swift_DB_DEMO
+ * [Android]https://github.com/NIFCloud-mbaas/android_data_demo
