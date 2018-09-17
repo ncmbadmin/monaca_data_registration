@@ -36,7 +36,7 @@
     "tag": "v3.0.0",
     "commit": "74e03dd350132ac9ca74489ed62d88c00a249d7f"
   },
-  "_source": "https://github.com/NIFTYCloud-mbaas/ncmb_js.git",
+  "_source": "https://github.com/NIFCloud-mbaas/ncmb_js.git",
   "_target": "3.0.0",
   "_originalSource": "ncmb",
   "_direct": true
