@@ -1,15 +1,15 @@
-# 【Monaca】ニフティクラウドmobile backend を体験しよう！
+# 【Monaca】ニフクラ mobile backend を体験しよう！
 ![画像1](/readme-img/001.png)
 
 ## 概要
-* Monacaを利用して、[ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)へデータ登録を行うサンプルアプリです
+* Monacaを利用して、[ニフクラ mobile backend](https://mbaas.nifcloud.com/)へデータ登録を行うサンプルアプリです
  * 「Start Demo」ボタンをタップするとクラウドにデータが上がります★
-* 簡単な操作ですぐに [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)を体験いただけます
+* 簡単な操作ですぐに [ニフクラ mobile backend](https://mbaas.nifcloud.com/)を体験いただけます
 
-## ニフティクラウドmobile backendって何？？
+## ニフクラ mobile backendって何？？
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！今回はデータストアを体験します
 
-注1：詳しくは[こちら](http://mb.cloud.nifty.com/price.htm)をご覧ください
+注1：詳しくは[こちら](https://mbaas.nifcloud.com/price.htm)をご覧ください
 
 ![画像2](/readme-img/002.png)
 
@@ -28,14 +28,14 @@ Android
 
 
 ## 手順
-### 1. [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の会員登録とログイン→アプリ作成
+### 1. [ニフクラ mobile backend](https://mbaas.nifcloud.com/)の会員登録とログイン→アプリ作成
 
 * 上記リンクから会員登録（無料）をします。登録ができたらログインをすると下図のように「アプリの新規作成」画面が出るのでアプリを作成します
 
 ![画像3](/readme-img/003.png)
 
 * アプリ作成されると下図のような画面になります
-* この２種類のAPIキー（アプリケーションキーとクライアントキー）はXcodeで作成するiOSアプリに[ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)を紐付けるために使用します
+* この２種類のAPIキー（アプリケーションキーとクライアントキー）はXcodeで作成するiOSアプリに[ニフクラ mobile backend](https://mbaas.nifcloud.com/)を紐付けるために使用します
 
 ![画像4](/readme-img/004.png)
 
@@ -49,7 +49,7 @@ Android
 1. 左上の「Import Project」をクリックします
 1. 「プロジェクト名」を入力します　例）「DBDEMO」
 1. 「インポート方法」の「URLを指定してインポート」をチェックし、下記リンクを右クリックでコピーし、貼り付けます
-1. プロジェクト：__[monaca_data_registration](https://github.com/NIFTYCloud-mbaas/monaca_data_registration/archive/master.zip)__
+1. プロジェクト：__[monaca_data_registration](https://github.com/NIFCloud-mbaas/monaca_data_registration/archive/master.zip)__
 1. 「インポート」をクリックするとインポートされたプロジェクトが作成されます
 
 ![画像6](/readme-img/006.png)
@@ -63,7 +63,7 @@ Android
 ### 3. APIキーの設定
 
 * プロジェクトが開いたら、index.htmlを編集します
-* 先程[ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)のダッシュボード上で確認したAPIキーを貼り付けます
+* 先程[ニフクラ mobile backend](https://mbaas.nifcloud.com/)のダッシュボード上で確認したAPIキーを貼り付けます
 
 ![画像7](/readme-img/007.png)
 
@@ -82,17 +82,17 @@ Android
  * 保存に成功した場合：「`New object created with objectId: ******`」
  * 保存に失敗した場合：「`Failed to create new object, with error code: ******`」
 * objectIdはデータを保存したときに自動で割り振られるIDです
-* エラーが発生した場合は、[こちら](http://mb.cloud.nifty.com/doc/current/rest/common/error.html)よりエラー内容を確認いただけます
+* エラーが発生した場合は、[こちら](https://mbaas.nifcloud.com/doc/current/rest/common/error.html)よりエラー内容を確認いただけます
 ![画像1](/readme-img/001.png)
 
-* 保存に成功したら、[ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)のダッシュボードから「データストア」を確認してみましょう！
+* 保存に成功したら、[ニフクラ mobile backend](https://mbaas.nifcloud.com/)のダッシュボードから「データストア」を確認してみましょう！
 * `TestClass`という保存用クラスが作成され、その中にデータが確認できます
 
 ## 解説
 サンプルプロジェクトに実装済みの内容のご紹介
 
 #### SDKのインポートと初期設定
- * SDKの詳しい導入方法は、mBaaS の[ドキュメント（クイックスタート）](http://mb.cloud.nifty.com/doc/current/introduction/quickstart_monaca.html)をご用意していますので、ご活用ください
+ * SDKの詳しい導入方法は、mBaaS の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_monaca.html)をご用意していますので、ご活用ください
 
 #### ロジック
  * `index.html`にデザインとロジックの両方を書いています
@@ -127,8 +127,8 @@ SDKが最新になっていない場合は、以下画像をご参考いただ�
 ![画像9](/readme-img/009.png)
 
 ## 参考
-* mBaaS(monaca)の[ドキュメント](http://mb.cloud.nifty.com/doc/current/#/Monaca)
+* mBaaS(monaca)の[ドキュメント](https://mbaas.nifcloud.com/doc/current/#/Monaca)
 * 同じ内容の【iOS・Android】版もご用意しています
- * [Objective-C]https://github.com/NIFTYCloud-mbaas/iOS-Objective-C_DB_DEMO
- * [Swift]https://github.com/NIFTYCloud-mbaas/iOS-Swift_DB_DEMO
- * [Android]https://github.com/NIFTYCloud-mbaas/android_data_demo
+ * [Objective-C]https://github.com/NIFCloud-mbaas/iOS-Objective-C_DB_DEMO
+ * [Swift]https://github.com/NIFCloud-mbaas/iOS-Swift_DB_DEMO
+ * [Android]https://github.com/NIFCloud-mbaas/android_data_demo

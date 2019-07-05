@@ -1,8 +1,22 @@
-JavaScript SDK for NiftyCloud mobile backend
+JavaScript SDK for NIF Cloud mobile backend
 ------------------------------------------------------------
-[![Build Status](https://travis-ci.org/NIFTYCloud-mbaas/ncmb_js.png)](https://travis-ci.org/NIFTYCloud-mbaas/ncmb_js)
-[![Coverage Status](https://coveralls.io/repos/NIFTYCloud-mbaas/ncmb_js/badge.svg?branch=apply_coveralls&service=github)](https://coveralls.io/github/NIFTYCloud-mbaas/ncmb_js?branch=apply_coveralls)
-[![Code Climate](https://codeclimate.com/github/NIFTYCloud-mbaas/ncmb_js/badges/gpa.svg)](https://codeclimate.com/github/NIFTYCloud-mbaas/ncmb_js)
+[![Build Status](https://travis-ci.org/NIFCloud-mbaas/ncmb_js.png)](https://travis-ci.org/NIFCloud-mbaas/ncmb_js)
+[![Coverage Status](https://coveralls.io/repos/NIFCloud-mbaas/ncmb_js/badge.svg?branch=apply_coveralls&service=github)](https://coveralls.io/github/NIFCloud-mbaas/ncmb_js?branch=apply_coveralls)
+[![Code Climate](https://codeclimate.com/github/NIFCloud-mbaas/ncmb_js/badges/gpa.svg)](https://codeclimate.com/github/NIFCloud-mbaas/ncmb_js)
+
+## Supported environment
+
+| Environment              | Supported version |
+|:---                  |:---        |
+| Node.js              | 6.x, 8.x |
+| Mozilla Firefox      | Latest version     |
+| Google Chrome        | Latest version     |
+
+## Support desk coverage version
+
+Please read [Developer guidelines](https://mbaas.nifcloud.com/doc/current/common/dev_guide.html#SDK%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6).
+
+- v2.1.5 ～ (※as of August, 2018)
 
 ## Install
 
@@ -248,7 +262,7 @@ $ browserify -r -p licensify -t [ uglifyify -x .js ] -o ncmb.min.js lib/ncmb.js
 ## For Developer
 
 ```shell
-$ git clone https://github.com/NIFTYCloud-mbaas/ncmb_js
+$ git clone https://github.com/NIFCloud-mbaas/ncmb_js
 $ cd ncmb_js
 $ npm install
 $ npm test
@@ -295,8 +309,8 @@ www/
 
 ## Create SDK Document
 
-Run `npm run docment:generate` command, then documents has created in `jsdoc` directory.
+Run `npm run document:generate` command, then documents has created in `jsdoc` directory.
 
 ## License
 
-Please read [LICENSE](git://github.com/NIFTYCloud-mbaas/ncmb_js/blob/master/LICENSE).
+Please read [LICENSE](https://github.com/NIFCloud-mbaas/ncmb_js/blob/master/LICENSE).

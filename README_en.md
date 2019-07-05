@@ -1,19 +1,19 @@
-# 【Monaca】 Let's try nifty cloud mobile backend!
+# 【Monaca】 Let's try NIFCloud mobile backend!
 ![Image1](/readme-img/001_en.png)
 
 ## Overview
-* This is a sample application that uses Monaca to register data to [Nifty Cloud mobile backend](http://mb.cloud.nifty.com/)
+* This is a sample application that uses Monaca to register data to [NIFCloud mobile backend](https://mbaas.nifcloud.com/)
 * When you tap "Start Demo" button, data will be registered to the cloud ★
-* By this simple operation, you can experience the  [Nifty Cloud mobile backend](http://mb.cloud.nifty.com/)
+* By this simple operation, you can experience the  [NIFCloud mobile backend](https://mbaas.nifcloud.com/)
 * Remember to switch language to English when you first access the control panel.
 
 ![Image_english_conpanel](/readme-img/inforblog_engconpane.jpg)
 
-## What is Nifty Cloud mobile backend?
+## What is NIFCloud mobile backend?
 It is a cloud service that the back-end functionalities of smartphone app (push notification, data store, membership management, file store, SNS cooperation, location information search and script) is unnecessary development, and moreover, the basic **free** (Note 1) can be used in!
 This time, I will experience the data store feature.
 
-※Note 1: For detail information please visit [here](http://mb.cloud.nifty.com/price.htm)
+※Note 1: For detail information please visit [here](https://mbaas.nifcloud.com/price.htm)
 
 ![Image2](/readme-img/002_en.png)
 
@@ -32,7 +32,7 @@ Android
 
 
 ## Procedure
-### 1. Register membership of [Nifty Cloud mobile backend](http://mb.cloud.nifty.com/) and login → Create application
+### 1. Register membership of [NIFCloud mobile backend](https://mbaas.nifcloud.com/) and login → Create application
 
 * Click on the above link to Register membership (free). The "Free ID Registration" screen will appear as shown below.
 
@@ -55,7 +55,7 @@ Android
 ![Image3](/readme-img/003_en.png)
 
 * When the application is created, the screen will look like the below figure.
-* These two kinds of API keys (application key and client key) are used to link the [Nifty Cloud mobile backend](http://mb.cloud.nifty.com/) to the iOS application that created by Xcode.
+* These two kinds of API keys (application key and client key) are used to link the [NIFCloud mobile backend](https://mbaas.nifcloud.com/) to the iOS application that created by Xcode.
 
 ![Image4](/readme-img/004_en.png)
 
@@ -69,7 +69,7 @@ Android
 1. Click "Import Project" at the top left
 1. Enter "Project Name" (for example: "DBDEMO")
 1. Check "Import from URL" in "Import Method", then right click to copy and paste the following link.
-1. Project:__[https://github.com/NIFTYCloud-mbaas/monaca_data_registration/archive/master.zip](https://github.com/NIFTYCloud-mbaas/monaca_data_registration/archive/master.zip)__
+1. Project:__[https://github.com/NIFCloud-mbaas/monaca_data_registration/archive/master.zip](https://github.com/NIFCloud-mbaas/monaca_data_registration/archive/master.zip)__
 1. When click "Import" button, the imported project will be created
 
 ![Image6](/readme-img/006_en.png)
@@ -83,7 +83,7 @@ Android
 ### 3. Setting the API key
 
 * When the project is opened, edit the index.html
-* Paste the API key you confirmed on the dashboard of [Nifty Cloud mobile backend](http://mb.cloud.nifty.com/) earlier
+* Paste the API key you confirmed on the dashboard of [NIFCloud mobile backend](https://mbaas.nifcloud.com/) earlier
 
 ![Image7](/readme-img/007_en.png)
 
@@ -102,17 +102,17 @@ Android
 * If saving was successful: ""`New object created with objectId: ******`"
 * If saving was failed: "`Failed to create new object, with error code: ******`"
 * objectId is the ID automatically allocated when saving data
-* If an error occurs, you can confirm the error content from [here](http://mb.cloud.nifty.com/doc/current/rest/common/error.html)
+* If an error occurs, you can confirm the error content from [here](https://mbaas.nifcloud.com/doc/current/rest/common/error.html)
 ![Image1](/readme-img/001_en.png)
 
-* If saving successfully, let's check "Datastore" from the dashboard of [Nifty Cloud mobile backend](http://mb.cloud.nifty.com/)!
+* If saving successfully, let's check "Datastore" from the dashboard of [NIFCloud mobile backend](https://mbaas.nifcloud.com/)!
 * `TestClass` that used for saving is created, and you can confirm data in it
 
 ## Explanation
 Introduction of contents already implemented in sample project
 
 #### Importing SDK and initial setting
- * We have prepared mBaaS's [document (quick start)] (http://mb.cloud.nifty.com/doc/current/introduction/quickstart_monaca.html) for details on how to install SDK.
+ * We have prepared mBaaS's [document (quick start)] (https://mbaas.nifcloud.com/doc/current/introduction/quickstart_monaca.html) for details on how to install SDK.
 
 #### Logic
  * We are developing both screen design and logic on `index.html`
@@ -147,8 +147,8 @@ If the SDK is not up to date, please refer to the image below and update your SD
 ![Image9](/readme-img/009_en.png)
 
 ## Reference
-* [Document](http://mb.cloud.nifty.com/doc/current/#/Monaca) of mBaaS(monaca)
+* [Document](https://mbaas.nifcloud.com/doc/current/#/Monaca) of mBaaS(monaca)
 * We also have the same content for [iOS · Android] version
- * [Objective-C]https://github.com/NIFTYCloud-mbaas/iOS-Objective-C_DB_DEMO
- * [Swift]https://github.com/NIFTYCloud-mbaas/iOS-Swift_DB_DEMO
- * [Android]https://github.com/NIFTYCloud-mbaas/android_data_demo
+ * [Objective-C]https://github.com/NIFCloud-mbaas/iOS-Objective-C_DB_DEMO
+ * [Swift]https://github.com/NIFCloud-mbaas/iOS-Swift_DB_DEMO
+ * [Android]https://github.com/NIFCloud-mbaas/android_data_demo
