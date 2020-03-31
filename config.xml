@@ -3,11 +3,9 @@
   <name>mobilebackendtemplate</name>
   <description>Hello World App</description>
   <author/>
-  <access origin="*"/>
   <content src="index.html"/>
   <preference name="loglevel" value="DEBUG"/>
   <preference name="AndroidLaunchMode" value="singleTop"/>
-  <preference name="DisallowOverscroll" value="true"/>
   <preference name="ErrorUrl" value=""/>
   <preference name="Fullscreen" value="false"/>
   <preference name="KeepRunning" value="true"/>
@@ -20,13 +18,9 @@
     <param name="android-package" value="org.apache.cordova.App"/>
   </feature>
   <preference name="AllowInlineMediaPlayback" value="false"/>
-  <preference name="AutoHideSplashScreen" value="true"/>
   <preference name="BackupWebStorage" value="cloud"/>
-  <preference name="EnableViewportScale" value="false"/>
-  <preference name="FadeSplashScreen" value="true"/>
   <preference name="KeyboardDisplayRequiresUserAction" value="true"/>
   <preference name="MediaPlaybackRequiresUserAction" value="false"/>
-  <preference name="ShowSplashScreenSpinner" value="false"/>
   <preference name="SuppressesIncrementalRendering" value="false"/>
   <preference name="TopActivityIndicator" value="gray"/>
   <preference name="GapBetweenPages" value="0"/>
@@ -44,13 +38,7 @@
   <allow-intent href="itms-apps:*"/>
   <allow-navigation href="*"/>
   <preference name="FadeSplashScreenDuration" value="250"/>
-  <preference name="ios-XCBuildConfiguration-TARGETED_DEVICE_FAMILY" value="1,2"/>
   <platform name="ios">
-    <config-file platform="ios" parent="CFBundleLocalizations" target="*-Info.plist">
-      <array>
-        <string>en</string>
-      </array>
-    </config-file>
     <icon src="/res/ios/icon/icon.png" width="57" height="57"/>
     <icon src="/res/ios/icon/icon@2x.png" width="114" height="114"/>
     <icon src="/res/ios/icon/icon-72.png" width="72" height="72"/>
@@ -78,6 +66,17 @@
     <splash src="/res/ios/screen/Default-Landscape~ipad.png" width="1024" height="768"/>
     <splash src="/res/ios/screen/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
     <splash src="/res/ios/screen/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
+    <preference name="orientation" value="default"/>
+    <preference name="WKWebViewOnly" value="true"/>
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine"/>
+    <feature name="CDVWKWebViewEngine">
+      <param name="ios-package" value="CDVWKWebViewEngine"/>
+    </feature>
+    <config-file platform="ios" parent="CFBundleLocalizations" target="*-Info.plist">
+      <array>
+        <string>en</string>
+      </array>
+    </config-file>
   </platform>
   <platform name="android">
     <icon src="/res/android/icon/ldpi.png" density="ldpi"/>
@@ -92,15 +91,20 @@
     <splash src="/res/android/screen/splash-port-xhdpi.9.png" density="port-xhdpi"/>
     <splash src="/res/android/screen/splash-port-xxhdpi.9.png" density="port-xxhdpi"/>
     <splash src="/res/android/screen/splash-port-xxxhdpi.9.png" density="port-xxxhdpi"/>
+    <splash src="/res/android/screen/splash-mdpi.png" density="mdpi"/>
   </platform>
-  <platform name="windows">
-    <icon src="/res/winrt/icon/package_logo_winrt.png" target="StoreLogo"/>
-    <icon src="/res/winrt/icon/app_logo_winrt.png" target="Square150x150Logo"/>
-    <icon src="/res/winrt/icon/app_small_logo_winrt.png" target="Square30x30Logo"/>
-    <icon src="/res/winrt/icon/app_tile_wide_logo_winrt.png" target="Wide315x150Logo"/>
-    <splash src="/res/winrt/screen/app_splash_screen_winrt.png" width="620" height="300"/>
+  <platform name="electron">
+    <icon src="/res/electron/icon/icon_electron_512.png" width="512" height="512"/>
+    <preference name="SplashScreenWidth" value="620"/>
+    <preference name="SplashScreenHeight" value="300"/>
+    <preference name="ShowSplashScreen" value="false"/>
+    <splash src="/res/electron/screen/electron_splash_image.png" width="620" height="300"/>
   </platform>
-  <platform name="chrome">
-    <icon src="/platforms/chrome/icon.png" width="128" height="128"/>
-  </platform>
+  <preference name="ios-XCBuildConfiguration-TARGETED_DEVICE_FAMILY" value="1,2"/>
+  <preference name="AutoHideSplashScreen" value="true"/>
+  <preference name="FadeSplashScreen" value="true"/>
+  <preference name="ShowSplashScreenSpinner" value="false"/>
+  <access origin="*"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="EnableViewportScale" value="false"/>
 </widget>
