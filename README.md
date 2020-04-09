@@ -22,7 +22,9 @@ iOS
 
 Android
 
-* Nexus 5X Androidバージョン 7.0
+* MacOS Mojave v10.14.6 (18G103)
+* Android studio: 3.4.1
+* Simulator: Pixel 2 Android OS Version 10
 
 ※上記内容で動作確認をしています。
 
@@ -49,7 +51,7 @@ Android
 1. 左上の「Import Project」をクリックします
 1. 「プロジェクト名」を入力します　例）「DBDEMO」
 1. 「インポート方法」の「URLを指定してインポート」をチェックし、下記リンクを右クリックでコピーし、貼り付けます
-1. プロジェクト：__[monaca_data_registration](https://github.com/NIFCloud-mbaas/monaca_data_registration/archive/master.zip)__
+1. プロジェクト：__[monaca_data_registration](https://github.com/NIFCLOUD-mbaas/monaca_data_registration/archive/master.zip)__
 1. 「インポート」をクリックするとインポートされたプロジェクトが作成されます
 
 ![画像6](/readme-img/006.png)
@@ -129,6 +131,6 @@ SDKが最新になっていない場合は、以下画像をご参考いただ�
 ## 参考
 * mBaaS(monaca)の[ドキュメント](https://mbaas.nifcloud.com/doc/current/#/Monaca)
 * 同じ内容の【iOS・Android】版もご用意しています
- * [Objective-C]https://github.com/NIFCloud-mbaas/iOS-Objective-C_DB_DEMO
- * [Swift]https://github.com/NIFCloud-mbaas/iOS-Swift_DB_DEMO
- * [Android]https://github.com/NIFCloud-mbaas/android_data_demo
+ * [Objective-C]https://github.com/NIFCLOUD-mbaas/iOS-Objective-C_DB_DEMO
+ * [Swift]https://github.com/NIFCLOUD-mbaas/iOS-Swift_DB_DEMO
+ * [Android]https://github.com/NIFCLOUD-mbaas/android_data_demo
