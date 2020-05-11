@@ -1,10 +1,15 @@
-# [Monaca] Let's try NIFCLOUD mobile backend!
+# 【Monaca】 Let's try NIFCLOUD mobile backend!
 ![Image1](/readme-img/001_en.png)
 
+<!-- PJ Update 2020/05/07 -->
+<!-- JS SDK Ver. 3.0.2 -->
+
 ## Overview
-* This is a sample application that uses Monaca to register data to [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en)
+<!-- * This is a sample application that uses Monaca to register data to [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en) -->
+* This is a sample application that uses Monaca to register data to [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/)
 * When you tap "Start Demo" button, data will be registered to the cloud ★
-* By this simple operation, you can experience the  [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en)
+<!-- * By this simple operation, you can experience the  [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en) -->
+* By this simple operation, you can experience the  [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/)
 * Remember to switch language to English when you first access the control panel.
 
 ![Image_english_conpanel](/readme-img/inforblog_engconpane.jpg)
@@ -13,18 +18,20 @@
 It is a cloud service that the back-end functionalities of smartphone app (push notification, data store, membership management, file store, SNS cooperation, location information search and script) is unnecessary development, and moreover, the basic **free** (Note 1) can be used in!
 This time, I will experience the data store feature.
 
-※Note 1: For detail information please visit [here](https://mbaas.nifcloud.com/en)
+<!-- ※Note 1: For detail information please visit [here](https://mbaas.nifcloud.com/en) -->
+※Note 1: For detail information please visit [here](https://mbaas.nifcloud.com/price.htm)
+
 
 ![Image2](/readme-img/002_en.png)
 
 ## Operating environment
-iOS
+### iOS
 
 * Mac OS X 10.11.6 (El Capitan)
 * iPhone5 iOS 9.3.5
 * iPhone6s iOS 10.0.1
 
-Android
+### Android
 
 * Nexus 5X Android version 7.0
 
@@ -32,33 +39,27 @@ Android
 
 
 ## Procedure
-### 1. Sign up for [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en) and login → Create application
+<!-- ### 1. Sign up for [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en) and login → Create application -->
+### 1. Sign up for [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/) and login → Create application
 
-* Click on the above link to and select Sign up with SNS account on the English Site. The "Signup Account (Free)" screen will appear as shown below.
+* Access the following URL.
+  * https://console.mbaas.nifcloud.com/signup
+* Click "Language" in the upper right corner and select "English".
 
-![AccountRegisterImage1](/readme-img/account_register_001.png)
+![AccountRegisterImage0](/readme-img/account_register_001.png)
 
-* Please select which SNS account you would like to use to login (Facebook / Twitter / Google).
+* Sign up using your Facebook, Twitter, or Google social networking account. Click the SNS account you want to use.
 
-![AccountRegisterImage2](/readme-img/account_register_002.png)
+![AccountRegisterImage1](/readme-img/account_register_002.png)
 
-* When you finished authentication your SNS account, please input your email address.
-* If you belong to the company, please input your company informations.
-* Then click on `Send confirmation email` button  to authenticate your account by email.
-
-![AccountRegisterImage3](/readme-img/account_register_003.png)
-
-* Then click on confirmation link sent to your mail, and move to Term of service Agreement.
-* Please complete your account registration after agreeing it.
-
-![AccountRegisterImage4](/readme-img/account_register_004.png)
-
-* Enter your account information, then login and the "Create new App" screen will appear as shown below, then you create the application.
+* After that, the registration screen of each SNS will be displayed, so please follow the instructions.
+* Your account will be created if you set and confirm the registered email address and agree to the terms of use
+* The "Create new App" screen will appear, then you create the application.
 
 ![Image3](/readme-img/003_en.png)
 
 * When the application is created, the screen will look like the below figure.
-* These two kinds of API keys (application key and client key) are used to link the [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en) to the application that created by Monaca.
+* These two kinds of API keys (application key and client key) are used to link the [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/) to the iOS application that created by Xcode.
 
 ![Image4](/readme-img/004_en.png)
 
@@ -68,25 +69,34 @@ Android
 
 ### 2. Import project to Monaca and launch application
 
-1. Log in to [Monaca](https://monaca.io)
-1. Click "Import Project" at the top left
-1. Enter "Project Name" (for example: "DBDEMO")
-1. Check "Import from URL" in "Import Method", then right click to copy and paste the following link.
-1. Project:__[https://github.com/NIFCLOUD-mbaas/monaca_data_registration/archive/master.zip](https://github.com/NIFCLOUD-mbaas/monaca_data_registration/archive/master.zip)__
-1. When click "Import" button, the imported project will be created
+* Log in to [Monaca](https://ja.monaca.io/)
+* Click "Import" button at the top left.
+* Click "Import form URL".
 
-![Image6](/readme-img/006_en.png)
+![Image6_01](/readme-img/006_en_01.png)
 
-* Open the created project by clicking "Open"
+* Copy and paste the following link and Click "Next" button.
+  * Project: `https://github.com/NIFCLOUD-mbaas/monaca_data_registration/archive/master.zip`
+* Enter "Project Name".
+  * for example: `DBDEMO`
+* When click "Import Project" button, the imported project will be created.
+
+![Image6_02](/readme-img/006_en_02.png)
+
+* Select the created project and click "Open in Cloud IDE" displayed on the right.
+
+![Image6_03](/readme-img/006_en_03.png)
+
 * The project is opened and the preview screen is displayed
-* Let's play with the preview screen or [Monaca debugger](https://monaca.io/debugger.html)!
+* Let's play with the preview screen or [Monaca debugger](https://ja.monaca.io/debugger.html)!
 
 ※ We recommend using preview screen/Monaca with __iPhone 6__ or higher for operation confirmation.
 
 ### 3. Setting the API key
 
 * When the project is opened, edit the index.html
-* Paste the API key you confirmed on the dashboard of [NIFCloud mobile backend](https://mbaas.nifcloud.com/en) earlier
+<!-- * Paste the API key you confirmed on the management screen of [NIFCloud mobile backend](https://mbaas.nifcloud.com/en) earlier -->
+* Paste the API key you confirmed on the management screen of [NIFCloud mobile backend](https://mbaas.nifcloud.com/) earlier
 
 ![Image7](/readme-img/007_en.png)
 
@@ -108,7 +118,7 @@ Android
 * If an error occurs, you can confirm the error content from [here](https://mbaas.nifcloud.com/doc/current/rest/common/error.html)
 ![Image1](/readme-img/001_en.png)
 
-* If saving successfully, let's check "Datastore" from the dashboard of [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en)!
+* If saving successfully, let's check "Datastore" from the management screen of [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en)!
 * `TestClass` that used for saving is created, and you can confirm data in it
 
 ## Explanation
@@ -122,10 +132,11 @@ Introduction of contents already implemented in sample project
  * Setting the value in the key, value format (`set(key, value)`) for `testClass` object, then executing the save() method, the data is stored asynchronously
 
 ```javascript
-
-var appKey    = "YOUR_NCMB_APPLICATION_KEY";
+// API key.
+var applicationKey    = "YOUR_NCMB_APPLICATION_KEY";
 var clientKey = "YOUR_NCMB_CLIENT_KEY";
-var ncmb = new NCMB(appKey, clientKey);
+// SDK initialization.
+var ncmb = new NCMB(applicationKey, clientKey);
 
 function startDemo() {
     var TestClass = ncmb.DataStore("TestClass");
@@ -135,13 +146,13 @@ function startDemo() {
     testClass.set(key, value);
     testClass.save()
         .then(function() {
-            // Executed after saving completion
+            // Save success.
             alert("New object created with objectId: " + testClass.objectId);
         })
         .catch(function(error) {
-            // Executed when error occurred
+            // Save failed.
             alert("Failed to create new object, with error code: " + error.text);
-    });
+        });
 }
 ```
 #### How to install SDK
