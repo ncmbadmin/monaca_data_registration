@@ -5,11 +5,11 @@
 <!-- JS SDK Ver. 3.0.2 -->
 
 ## Overview
-<!-- * This is a sample application that uses Monaca to register data to [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en) -->
-* This is a sample application that uses Monaca to register data to [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/)
+* This is a sample application that uses Monaca to register data to [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en)
+<!-- * This is a sample application that uses Monaca to register data to [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/) -->
 * When you tap "Start Demo" button, data will be registered to the cloud ★
-<!-- * By this simple operation, you can experience the  [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en) -->
-* By this simple operation, you can experience the  [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/)
+* By this simple operation, you can experience the  [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en)
+<!-- * By this simple operation, you can experience the  [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/) -->
 * Remember to switch language to English when you first access the control panel.
 
 ![Image_english_conpanel](/readme-img/inforblog_engconpane.jpg)
@@ -18,8 +18,8 @@
 It is a cloud service that the back-end functionalities of smartphone app (push notification, data store, membership management, file store, SNS cooperation, location information search and script) is unnecessary development, and moreover, the basic **free** (Note 1) can be used in!
 This time, I will experience the data store feature.
 
-<!-- ※Note 1: For detail information please visit [here](https://mbaas.nifcloud.com/en) -->
-※Note 1: For detail information please visit [here](https://mbaas.nifcloud.com/price.htm)
+※Note 1: For detail information please visit [here](https://mbaas.nifcloud.com/en)
+<!-- ※Note 1: For detail information please visit [here](https://mbaas.nifcloud.com/price.htm) -->
 
 
 ![Image2](/readme-img/002_en.png)
@@ -39,8 +39,8 @@ This time, I will experience the data store feature.
 
 
 ## Procedure
-<!-- ### 1. Sign up for [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en) and login → Create application -->
-### 1. Sign up for [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/) and login → Create application
+### 1. Sign up for [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en) and login → Create application
+<!-- ### 1. Sign up for [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/) and login → Create application -->
 
 * Access the following URL.
   * https://console.mbaas.nifcloud.com/signup
@@ -95,8 +95,8 @@ This time, I will experience the data store feature.
 ### 3. Setting the API key
 
 * When the project is opened, edit the index.html
-<!-- * Paste the API key you confirmed on the management screen of [NIFCloud mobile backend](https://mbaas.nifcloud.com/en) earlier -->
-* Paste the API key you confirmed on the management screen of [NIFCloud mobile backend](https://mbaas.nifcloud.com/) earlier
+* Paste the API key you confirmed on the management screen of [NIFCloud mobile backend](https://mbaas.nifcloud.com/en) earlier
+<!-- * Paste the API key you confirmed on the management screen of [NIFCloud mobile backend](https://mbaas.nifcloud.com/) earlier -->
 
 ![Image7](/readme-img/007_en.png)
 
@@ -119,6 +119,7 @@ This time, I will experience the data store feature.
 ![Image1](/readme-img/001_en.png)
 
 * If saving successfully, let's check "Datastore" from the management screen of [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en)!
+<!-- * If saving successfully, let's check "Datastore" from the management screen of [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/)! -->
 * `TestClass` that used for saving is created, and you can confirm data in it
 
 ## Explanation
