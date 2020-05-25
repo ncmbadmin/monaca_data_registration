@@ -104,7 +104,8 @@
 サンプルプロジェクトに実装済みの内容のご紹介
 
 #### SDKのインポートと初期設定
- * SDKの詳しい導入方法は、mBaaS の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_monaca.html)をご用意していますので、ご活用ください
+ * SDKの詳しい導入方法は、mBaaS の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/div_quickstart_javascript_monaca.html)をご用意していますので、ご活用ください
+ * SDKが最新になっていない場合は、「設定」＞「JS/CSSコンポーネントの追加と削除」から「ncmb」を削除（remove）してから上記ドキュメントを参考に、SDKを入れ直してください
 
 #### ロジック
  * `index.html`にデザインとロジックの両方を書いています
@@ -135,14 +136,9 @@ function startDemo() {
 }
 ```
 
-#### SDKのインストール方法
-SDKが最新になっていない場合は、以下画像をご参考いただき、ご自身でSDKを更新してください
-
-![画像9](/readme-img/009.png)
-
 ## 参考
 * mBaaS(monaca)の[ドキュメント](https://mbaas.nifcloud.com/doc/current/#/Monaca)
 * 同じ内容の【iOS・Android】版もご用意しています
- * [Objective-C]https://github.com/NIFCLOUD-mbaas/iOS-Objective-C_DB_DEMO
- * [Swift]https://github.com/NIFCLOUD-mbaas/iOS-Swift_DB_DEMO
- * [Android]https://github.com/NIFCLOUD-mbaas/android_data_demo
+ * [Objective-C](https://github.com/NIFCLOUD-mbaas/iOS-Objective-C_DB_DEMO)
+ * [Swift](https://github.com/NIFCLOUD-mbaas/iOS-Swift_DB_DEMO)
+ * [Android](https://github.com/NIFCLOUD-mbaas/android_data_demo)
