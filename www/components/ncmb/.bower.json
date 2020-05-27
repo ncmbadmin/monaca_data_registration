@@ -1,12 +1,12 @@
 {
   "name": "ncmb",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "homepage": "https://mbaas.nifcloud.com/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NIFCloud-mbaas/ncmb_js"
+    "url": "git+https://github.com/NIFCLOUD-mbaas/ncmb_js"
   },
-  "description": "JavaScript SDK for NIFCloud mobile backend",
+  "description": "JavaScript SDK for NIFCLOUD mobile backend",
   "main": "ncmb.min.js",
   "keywords": [
     "mbaas",
@@ -30,14 +30,14 @@
     "CONTRIBUTING.md",
     "package.json"
   ],
-  "_release": "3.0.0",
+  "_release": "3.0.2",
   "_resolution": {
     "type": "version",
-    "tag": "v3.0.0",
-    "commit": "74e03dd350132ac9ca74489ed62d88c00a249d7f"
+    "tag": "v3.0.2",
+    "commit": "563604aaa35626223c30b61861db77e443903eac"
   },
-  "_source": "https://github.com/NIFCloud-mbaas/ncmb_js.git",
-  "_target": "3.0.0",
+  "_source": "https://github.com/NIFTYCloud-mbaas/ncmb_js.git",
+  "_target": "3.0.2",
   "_originalSource": "ncmb",
   "_direct": true
 }

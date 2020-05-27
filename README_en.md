@@ -1,30 +1,33 @@
-# [Monaca] Let's try NIFCLOUD mobile backend!
+# 【Monaca】 Let's try NIFCLOUD mobile backend!
 ![Image1](/readme-img/001_en.png)
 
+<!-- PJ Update 2020/05/07 -->
+<!-- JS SDK Ver. 3.0.2 -->
+
 ## Overview
-* This is a sample application that uses Monaca to register data to [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en)
-* When you tap "Start Demo" button, data will be registered to the cloud ★
-* By this simple operation, you can experience the  [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en)
-* Remember to switch language to English when you first access the control panel.
+* This is a sample application that uses Monaca to register data to [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en).
+* When you tap "Start Demo" button, data will be registered to NIFCLOUD mobile backend cloud.
+* By this simple action, you can experience the  [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en) basic features.
+* Remember to switch language to English at the first time you access NIFCLOUD mobile backend control panel.
 
 ![Image_english_conpanel](/readme-img/inforblog_engconpane.jpg)
 
 ## What is NIFCLOUD mobile backend?
-It is a cloud service that the back-end functionalities of smartphone app (push notification, data store, membership management, file store, SNS cooperation, location information search and script) is unnecessary development, and moreover, the basic **free** (Note 1) can be used in!
-This time, I will experience the data store feature.
+NIFCLOUD mobile backend is a cloud service that provide the back-end features for smartphone app such as push notification, data store, user management, file store, SNS, geolocation and script, which help reduce app development costs. Moreover, full features can be use with the basic plan which is  **free** (Note 1) !
+This time, We will try the data store feature with this sample project.
 
 ※Note 1: For detail information please visit [here](https://mbaas.nifcloud.com/en)
 
 ![Image2](/readme-img/002_en.png)
 
 ## Operating environment
-iOS
+### iOS
 
 * Mac OS X 10.11.6 (El Capitan)
 * iPhone5 iOS 9.3.5
 * iPhone6s iOS 10.0.1
 
-Android
+### Android
 
 * Nexus 5X Android version 7.0
 
@@ -34,31 +37,24 @@ Android
 ## Procedure
 ### 1. Sign up for [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en) and login → Create application
 
-* Click on the above link to and select Sign up with SNS account on the English Site. The "Signup Account (Free)" screen will appear as shown below.
+* Access the following URL.
+  * https://console.mbaas.nifcloud.com/signup
+* Click "Language" in the upper right corner and select "English".
 
-![AccountRegisterImage1](/readme-img/account_register_001.png)
+![AccountRegisterImage0](/readme-img/account_register_001.png)
 
-* Please select which SNS account you would like to use to login (Facebook / Twitter / Google).
+* Choose sign up using your Facebook, Twitter or Google social networking account. Click the SNS account you want to use.
 
-![AccountRegisterImage2](/readme-img/account_register_002.png)
+![AccountRegisterImage1](/readme-img/account_register_002.png)
 
-* When you finished authentication your SNS account, please input your email address.
-* If you belong to the company, please input your company informations.
-* Then click on `Send confirmation email` button  to authenticate your account by email.
-
-![AccountRegisterImage3](/readme-img/account_register_003.png)
-
-* Then click on confirmation link sent to your mail, and move to Term of service Agreement.
-* Please complete your account registration after agreeing it.
-
-![AccountRegisterImage4](/readme-img/account_register_004.png)
-
-* Enter your account information, then login and the "Create new App" screen will appear as shown below, then you create the application.
+* After that, the registration screen of each SNS will be displayed, so please follow the instructions.
+* You will be ask to register confirm email. Your account will be generated after you complete confirmation action by registration email instruction and agree to the terms of use.
+* The "Create new App" screen will appear, then you please create new application by input application name.
 
 ![Image3](/readme-img/003_en.png)
 
-* When the application is created, the screen will look like the below figure.
-* These two kinds of API keys (application key and client key) are used to link the [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en) to the application that created by Monaca.
+* After new application is created, the following screen will be displayed.
+* There are two kinds of API keys (application key and client key) are generated for new created app. These keys will be used to connect to the [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en) for application which will be develop in Monaca.
 
 ![Image4](/readme-img/004_en.png)
 
@@ -68,25 +64,33 @@ Android
 
 ### 2. Import project to Monaca and launch application
 
-1. Log in to [Monaca](https://monaca.io)
-1. Click "Import Project" at the top left
-1. Enter "Project Name" (for example: "DBDEMO")
-1. Check "Import from URL" in "Import Method", then right click to copy and paste the following link.
-1. Project:__[https://github.com/NIFCLOUD-mbaas/monaca_data_registration/archive/master.zip](https://github.com/NIFCLOUD-mbaas/monaca_data_registration/archive/master.zip)__
-1. When click "Import" button, the imported project will be created
+* Log in to [Monaca](https://monaca.io/)
+* Click "Import" button at the top left.
+* Click "Import form URL".
 
-![Image6](/readme-img/006_en.png)
+![Image6_01](/readme-img/006_en_01.png)
 
-* Open the created project by clicking "Open"
+* Copy and paste the following link and Click "Next" button.
+  * Project: `https://github.com/NIFCLOUD-mbaas/monaca_data_registration/archive/master.zip`
+* Enter "Project Name".
+  * for example: `DBDEMO`
+* After click "Import Project" button, the imported project will be created.
+
+![Image6_02](/readme-img/006_en_02.png)
+
+* Select the created project and click "Open in Cloud IDE" displayed on the right.
+
+![Image6_03](/readme-img/006_en_03.png)
+
 * The project is opened and the preview screen is displayed
-* Let's play with the preview screen or [Monaca debugger](https://monaca.io/debugger.html)!
+* Let's use with the preview screen or [Monaca debugger](https://monaca.io/debugger.html) to test.
 
 ※ We recommend using preview screen/Monaca with __iPhone 6__ or higher for operation confirmation.
 
 ### 3. Setting the API key
 
 * When the project is opened, edit the index.html
-* Paste the API key you confirmed on the dashboard of [NIFCloud mobile backend](https://mbaas.nifcloud.com/en) earlier
+* Paste the API key you confirmed on the control panel screen of [NIFCloud mobile backend](https://mbaas.nifcloud.com/en) earlier
 
 ![Image7](/readme-img/007_en.png)
 
@@ -108,24 +112,31 @@ Android
 * If an error occurs, you can confirm the error content from [here](https://mbaas.nifcloud.com/doc/current/rest/common/error.html)
 ![Image1](/readme-img/001_en.png)
 
-* If saving successfully, let's check "Datastore" from the dashboard of [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en)!
+* After saving successfully, let's check "Datastore" from the control panel screen of [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/en) to see registered data.
 * `TestClass` that used for saving is created, and you can confirm data in it
 
 ## Explanation
-Introduction of contents already implemented in sample project
+Most of features are already implemented in sample project, which we will display details following.
 
 #### Importing SDK and initial setting
- * We have prepared mBaaS's [document (quick start)] (https://mbaas.nifcloud.com/doc/current/introduction/quickstart_monaca.html) for details on how to install SDK.
+ * We have prepared mBaaS's [document (quick start)](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_monaca.html) for details on how to install SDK.
+
+![Image9](/readme-img/009_en.png)
+
+* If the SDK(ncmb) is not up to date, please delete it and add it again.
+
+![Image10](/readme-img/010_en.png)
 
 #### Logic
  * We are developing both screen design and logic on `index.html`
  * Setting the value in the key, value format (`set(key, value)`) for `testClass` object, then executing the save() method, the data is stored asynchronously
 
 ```javascript
-
-var appKey    = "YOUR_NCMB_APPLICATION_KEY";
+// API key.
+var applicationKey    = "YOUR_NCMB_APPLICATION_KEY";
 var clientKey = "YOUR_NCMB_CLIENT_KEY";
-var ncmb = new NCMB(appKey, clientKey);
+// SDK initialization.
+var ncmb = new NCMB(applicationKey, clientKey);
 
 function startDemo() {
     var TestClass = ncmb.DataStore("TestClass");
@@ -135,23 +146,18 @@ function startDemo() {
     testClass.set(key, value);
     testClass.save()
         .then(function() {
-            // Executed after saving completion
+            // Save success.
             alert("New object created with objectId: " + testClass.objectId);
         })
         .catch(function(error) {
-            // Executed when error occurred
+            // Save failed.
             alert("Failed to create new object, with error code: " + error.text);
-    });
+        });
 }
 ```
-#### How to install SDK
-If the SDK is not up to date, please refer to the image below and update your SDK yourself
-
-![Image9](/readme-img/009_en.png)
 
 ## Reference
 * [Document](https://mbaas.nifcloud.com/doc/current/#/Monaca) of mBaaS(monaca)
 * We also have the same content for [iOS · Android] version
- * [Objective-C]https://github.com/NIFCLOUD-mbaas/iOS-Objective-C_DB_DEMO
- * [Swift]https://github.com/NIFCLOUD-mbaas/iOS-Swift_DB_DEMO
- * [Android]https://github.com/NIFCLOUD-mbaas/android_data_demo
+  * [iOS](https://github.com/NIFCLOUD-mbaas/iOS-Objective-C_DB_DEMO)
+  * [Android](https://github.com/NIFCLOUD-mbaas/android_data_demo)

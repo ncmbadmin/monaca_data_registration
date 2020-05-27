@@ -1,6 +1,9 @@
 # 【Monaca】ニフクラ mobile backend を体験しよう！
 ![画像1](/readme-img/001.png)
 
+<!-- PJ Update 2020/05/07 -->
+<!-- JS SDK Ver. 3.0.2 -->
+
 ## 概要
 * Monacaを利用して、[ニフクラ mobile backend](https://mbaas.nifcloud.com/)へデータ登録を行うサンプルアプリです
  * 「Start Demo」ボタンをタップするとクラウドにデータが上がります★
@@ -14,13 +17,13 @@
 ![画像2](/readme-img/002.png)
 
 ## 動作環境
-iOS
+### iOS
 
 * Mac OS X 10.11.6(El Capitan)
 * iPhone5 iOS 9.3.5
 * iPhone6s iOS 10.0.1
 
-Android
+### Android
 
 * MacOS Mojave v10.14.6 (18G103)
 * Android studio: 3.4.1
@@ -47,16 +50,23 @@ Android
 
 ### 2. Monacaでプロジェクトインポートしてアプリを起動
 
-1. [Monaca](https://ja.monaca.io/)にログインします
-1. 左上の「Import Project」をクリックします
-1. 「プロジェクト名」を入力します　例）「DBDEMO」
-1. 「インポート方法」の「URLを指定してインポート」をチェックし、下記リンクを右クリックでコピーし、貼り付けます
-1. プロジェクト：__[monaca_data_registration](https://github.com/NIFCLOUD-mbaas/monaca_data_registration/archive/master.zip)__
-1. 「インポート」をクリックするとインポートされたプロジェクトが作成されます
+* [Monaca](https://ja.monaca.io/)にログインします
+* 左上の「インポート」をクリックします
+* 「インポート方法」で「URL」をクリックします
 
-![画像6](/readme-img/006.png)
+![画像6_01](/readme-img/006_01.png)
 
-* 作成されたプロジェクトを「開く」をクリックして開きます
+* 「URL」に下記URLをコピーして貼り付け、「次」をクリックします
+  * プロジェクトURL： `https://github.com/NIFCLOUD-mbaas/monaca_data_registration/archive/master.zip`
+* 「プロジェクト名」を入力し、「プロジェクトのインポート」をクリックします
+  * 　プロジェクト名の入力例）「`DBDEMO`」
+
+![画像6_02](/readme-img/006_02.png)
+
+* 作成されたプロジェクトをクリックすると右側に表示される「クラウドIDEで開く」をクリックします
+
+![画像6_03](/readme-img/006_03.png)
+
 * プロジェクトが開き、プレビュー画面が表示されます
 * プレビュー画面あるいは[Monacaデバッガー](https://ja.monaca.io/debugger.html)で遊んでみましょう！
 
@@ -65,7 +75,7 @@ Android
 ### 3. APIキーの設定
 
 * プロジェクトが開いたら、index.htmlを編集します
-* 先程[ニフクラ mobile backend](https://mbaas.nifcloud.com/)のダッシュボード上で確認したAPIキーを貼り付けます
+* 先程[ニフクラ mobile backend](https://mbaas.nifcloud.com/)の管理画面上で確認したAPIキーを貼り付けます
 
 ![画像7](/readme-img/007.png)
 
@@ -87,24 +97,26 @@ Android
 * エラーが発生した場合は、[こちら](https://mbaas.nifcloud.com/doc/current/rest/common/error.html)よりエラー内容を確認いただけます
 ![画像1](/readme-img/001.png)
 
-* 保存に成功したら、[ニフクラ mobile backend](https://mbaas.nifcloud.com/)のダッシュボードから「データストア」を確認してみましょう！
+* 保存に成功したら、[ニフクラ mobile backend](https://mbaas.nifcloud.com/)の管理画面から「データストア」を確認してみましょう！
 * `TestClass`という保存用クラスが作成され、その中にデータが確認できます
 
 ## 解説
 サンプルプロジェクトに実装済みの内容のご紹介
 
 #### SDKのインポートと初期設定
- * SDKの詳しい導入方法は、mBaaS の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_monaca.html)をご用意していますので、ご活用ください
+ * SDKの詳しい導入方法は、mBaaS の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/div_quickstart_javascript_monaca.html)をご用意していますので、ご活用ください
+ * SDKが最新になっていない場合は、「設定」＞「JS/CSSコンポーネントの追加と削除」から「ncmb」を削除（remove）してから上記ドキュメントを参考に、SDKを入れ直してください
 
 #### ロジック
  * `index.html`にデザインとロジックの両方を書いています
  * `testClass`オブジェクトに対してkey, value形式で値をセット（`set(key, value)`）し、`save()`メソッドを実行すると、非同期にてデータが保存されます
 
 ```javascript
-
-var appKey    = "YOUR_NCMB_APPLICATION_KEY";
+// API key.
+var applicationKey    = "YOUR_NCMB_APPLICATION_KEY";
 var clientKey = "YOUR_NCMB_CLIENT_KEY";
-var ncmb = new NCMB(appKey, clientKey);
+// SDK initialization.
+var ncmb = new NCMB(applicationKey, clientKey);
 
 function startDemo() {
     var TestClass = ncmb.DataStore("TestClass");
@@ -114,23 +126,18 @@ function startDemo() {
     testClass.set(key, value);
     testClass.save()
         .then(function() {
-            // 保存完了後に実行される
+            // Save success.
             alert("New object created with objectId: " + testClass.objectId);
         })
         .catch(function(error) {
-            // エラー時に実行される
+            // Save failed.
             alert("Failed to create new object, with error code: " + error.text);
-    });
+        });
 }
 ```
-#### SDKのインストール方法
-SDKが最新になっていない場合は、以下画像をご参考いただき、ご自身でSDKを更新してください
-
-![画像9](/readme-img/009.png)
 
 ## 参考
 * mBaaS(monaca)の[ドキュメント](https://mbaas.nifcloud.com/doc/current/#/Monaca)
 * 同じ内容の【iOS・Android】版もご用意しています
- * [Objective-C]https://github.com/NIFCLOUD-mbaas/iOS-Objective-C_DB_DEMO
- * [Swift]https://github.com/NIFCLOUD-mbaas/iOS-Swift_DB_DEMO
- * [Android]https://github.com/NIFCLOUD-mbaas/android_data_demo
+  * [iOS](https://github.com/NIFCLOUD-mbaas/iOS-Objective-C_DB_DEMO)
+  * [Android](https://github.com/NIFCLOUD-mbaas/android_data_demo)

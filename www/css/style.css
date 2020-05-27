@@ -11,7 +11,7 @@ h1 {
     font-size: 40px;
     padding: 0;
     margin: 200px 0 30px 0;
-    color: white;
+    color: #FFF;
 }
 
 /**
@@ -21,23 +21,16 @@ h1 {
 .button--large {
   text-align: center;
   position: relative;
-  display: inline-block;
-  vertical-align: top;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  padding: 0;
   margin: 0;
   font: inherit;
-  color: inherit;
   background: transparent;
-  border: none;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -48,13 +41,9 @@ h1 {
   overflow: hidden;
   height: auto;
   text-decoration: none;
-  padding: 4px 20px;
-  font-size: 16px;
-  line-height: 36px;
   letter-spacing: 0;
   color: #fff;
   text-shadow: 0 1px none;
-  vertical-align: middle;
   background-color: #1284ff;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -65,7 +54,6 @@ h1 {
   -moz-transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
   -o-transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
   transition: background-color 0.2s linear, color 0.2s linear, opacity 0.2s linear;
-  font-weight: 400;
   font-size: 16px;
   font-weight: 500;
   line-height: 36px;
@@ -75,18 +63,12 @@ h1 {
 }
 .button--large:active {
   background-color: #1284ff;
-  -webkit-box-shadow: none;
-  box-shadow: none;
   color: #fff;
   -webkit-transition: none;
   -moz-transition: none;
   -o-transition: none;
   transition: none;
   opacity: 0.6;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
 }
 .button--large:disabled {
   opacity: 0.3;
