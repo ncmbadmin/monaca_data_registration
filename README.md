@@ -139,6 +139,5 @@ function startDemo() {
 ## 参考
 * mBaaS(monaca)の[ドキュメント](https://mbaas.nifcloud.com/doc/current/#/Monaca)
 * 同じ内容の【iOS・Android】版もご用意しています
- * [Objective-C](https://github.com/NIFCLOUD-mbaas/iOS-Objective-C_DB_DEMO)
- * [Swift](https://github.com/NIFCLOUD-mbaas/iOS-Swift_DB_DEMO)
- * [Android](https://github.com/NIFCLOUD-mbaas/android_data_demo)
+  * [iOS](https://github.com/NIFCLOUD-mbaas/iOS-Objective-C_DB_DEMO)
+  * [Android](https://github.com/NIFCLOUD-mbaas/android_data_demo)

@@ -159,6 +159,5 @@ function startDemo() {
 ## Reference
 * [Document](https://mbaas.nifcloud.com/doc/current/#/Monaca) of mBaaS(monaca)
 * We also have the same content for [iOS · Android] version
- * [Objective-C]https://github.com/NIFCLOUD-mbaas/iOS-Objective-C_DB_DEMO
- * [Swift]https://github.com/NIFCLOUD-mbaas/iOS-Swift_DB_DEMO
- * [Android]https://github.com/NIFCLOUD-mbaas/android_data_demo
+  * [iOS](https://github.com/NIFCLOUD-mbaas/iOS-Objective-C_DB_DEMO)
+  * [Android](https://github.com/NIFCLOUD-mbaas/android_data_demo)
