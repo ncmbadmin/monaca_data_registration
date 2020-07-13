@@ -1,7 +1,7 @@
 # 【Monaca】ニフクラ mobile backend を体験しよう！
 ![画像1](/readme-img/001.png)
 
-<!-- PJ Update 2020/05/07 -->
+<!-- PJ Update 2020/07/13 -->
 <!-- JS SDK Ver. 3.0.2 -->
 
 ## 概要
@@ -57,7 +57,7 @@
 ![画像6_01](/readme-img/006_01.png)
 
 * 「URL」に下記URLをコピーして貼り付け、「次」をクリックします
-  * プロジェクトURL： `https://github.com/NIFCLOUD-mbaas/monaca_data_registration/archive/master.zip`
+  * プロジェクトURL： `https://github.com/NIFCLOUD-mbaas/monaca_data_registration.git`
 * 「プロジェクト名」を入力し、「プロジェクトのインポート」をクリックします
   * 　プロジェクト名の入力例）「`DBDEMO`」
 
