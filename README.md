@@ -123,9 +123,9 @@ function startDemo() {
     var value = "Hello, NCMB!";
     testClass.set(key, value);
     testClass.save()
-        .then(function() {
+         .then(function(testClass) {
             // Save success.
-            alert("New object created");
+            alert("New object created with objectId: " + testClass.objectId);
         })
         .catch(function(error) {
             // Save failed.
