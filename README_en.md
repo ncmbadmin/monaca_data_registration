@@ -23,13 +23,13 @@ This time, We will try the data store feature with this sample project.
 ## Operating environment
 ### iOS
 
-* Mac OS X 10.11.6 (El Capitan)
-* iPhone5 iOS 9.3.5
-* iPhone6s iOS 10.0.1
+* Mac OS X 10.15.6 (Catalina)
+* iPhoneX iOS 13.5.1
 
 ### Android
 
-* Nexus 5X Android version 7.0
+* Mac OS X 10.15.6 (Catalina)
+* Simulator: Pixel 2 Android OS Version 10
 
 ※We confirmed the SDK operations with the above operating environment.
 
@@ -145,7 +145,7 @@ function startDemo() {
     var value = "Hello, NCMB!";
     testClass.set(key, value);
     testClass.save()
-        .then(function() {
+        .then(function(testClass) {
             // Save success.
             alert("New object created with objectId: " + testClass.objectId);
         })
