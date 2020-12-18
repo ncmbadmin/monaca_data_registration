@@ -125,7 +125,7 @@ function startDemo() {
     testClass.save()
          .then(function(testClass) {
             // Save success.
-            alert("New object created");
+            alert("New object created with objectId: " + testClass.objectId);
         })
         .catch(function(error) {
             // Save failed.
