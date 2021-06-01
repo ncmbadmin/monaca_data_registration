@@ -5,6 +5,5 @@
 echo ">>> Installing dependencies..."
 npm install
 
-echo ">>> Run localhost..."
-echo ">>> Opening Cypress node module..."
-npm run dev & ./node_modules/.bin/cypress open
+echo ">>> Run localhost and run test..."
+npm run dev & npm run test
