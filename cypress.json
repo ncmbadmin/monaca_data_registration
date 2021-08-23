@@ -1,0 +1,8 @@
+{
+    "watchForFileChanges": false,
+    "chromeWebSecurity": false,
+    "testFiles": [
+      "**/*.{feature,features}",
+      "index.spec.js"
+    ]
+  }
