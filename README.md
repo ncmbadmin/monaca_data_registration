@@ -1,8 +1,12 @@
 # 【Monaca】ニフクラ mobile backend を体験しよう！
 ![画像1](/readme-img/001.png)
 
-<!-- PJ Update 2020/07/13 -->
-<!-- JS SDK Ver. 3.0.2 -->
+<!-- PJ Update 2020/12 -->
+<!-- JS SDK Ver. 3.1.1-->
+
+
+* 本サンプルは不具合がある場合、issue等から報告いただくようにお願いいたします
+* 更新日：2020/12
 
 ## 概要
 * Monacaを利用して、[ニフクラ mobile backend](https://mbaas.nifcloud.com/)へデータ登録を行うサンプルアプリです
@@ -17,6 +21,9 @@
 ![画像2](/readme-img/002.png)
 
 ## 動作環境
+
+Javascript SDK v3.1.1は導入済み
+
 ### iOS
 
 * Mac OS X 10.15.6 (Catalina)
