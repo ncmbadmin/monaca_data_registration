@@ -21,9 +21,13 @@ This time, We will try the data store feature with this sample project.
 ![Image2](/readme-img/002_en.png)
 
 ## Operating environment
+
+Cordova 10.0
+
 ### iOS
 
 * MacOS Big Sur 11.6
+* Xcode Version 13.0
 * iPhone 11 pro max - iOS 15.2.1
 
 ### Android
