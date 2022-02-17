@@ -22,12 +22,14 @@
 
 ## 動作環境
 
-Javascript SDK v3.1.1は導入済み
+Javascript SDK v3.1.3は導入済み
+Cordova 10.0
 
 ### iOS
 
-* Mac OS X 10.15.6 (Catalina)
-* iPhoneX iOS 13.5.1
+* MacOS Big Sur 11.6
+* Xcode Version 13.0
+* iPhone 11 pro max - iOS 15.2.1
 
 ### Android
 
