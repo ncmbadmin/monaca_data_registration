@@ -1,8 +1,36 @@
-JavaScript SDK for NiftyCloud mobile backend
+JavaScript SDK for NIFCLOUD mobile backend
 ------------------------------------------------------------
-[![Build Status](https://travis-ci.org/NIFTYCloud-mbaas/ncmb_js.png)](https://travis-ci.org/NIFTYCloud-mbaas/ncmb_js)
-[![Coverage Status](https://coveralls.io/repos/NIFTYCloud-mbaas/ncmb_js/badge.svg?branch=apply_coveralls&service=github)](https://coveralls.io/github/NIFTYCloud-mbaas/ncmb_js?branch=apply_coveralls)
-[![Code Climate](https://codeclimate.com/github/NIFTYCloud-mbaas/ncmb_js/badges/gpa.svg)](https://codeclimate.com/github/NIFTYCloud-mbaas/ncmb_js)
+[![Build Status](https://travis-ci.org/NIFCLOUD-mbaas/ncmb_js.png)](https://travis-ci.org/NIFCLOUD-mbaas/ncmb_js)
+
+This is JavaScript SDK for [NIFCLOUD mobile backend](https://mbaas.nifcloud.com/), a cloud based backend service for smartphone applications.
+By importing SDK, the following functions can be used from the application.
+- [Push notification](https://mbaas.nifcloud.com/doc/current/push/basic_usage_javascript.html)
+- [User management](https://mbaas.nifcloud.com/doc/current/user/basic_usage_javascript.html)
+- [SNS](https://mbaas.nifcloud.com/doc/current/sns/facebook_javascript.html)
+- [Datastore](https://mbaas.nifcloud.com/doc/current/datastore/basic_usage_javascript.html)
+- [Filestore](https://mbaas.nifcloud.com/doc/current/filestore/basic_usage_javascript.html)
+- [Geo Location](https://mbaas.nifcloud.com/doc/current/geopoint/basic_usage_javascript.html)
+- [Script](https://mbaas.nifcloud.com/doc/current/script/basic_usage_javascript.html)  
+
+To use the API through SDK, you need to register to NIFCLOUD mobile backend.
+For  SDK installation steps, see [Quick Start](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_javascript.html).
+
+## Supported environment
+
+| Environment              | Supported version |
+|:---                  |:---        |
+| Node.js              | 10.x, 12.x, 14.x, 16.x|
+| Mozilla Firefox      | Latest version     |
+| Google Chrome        | Latest version     |
+ (※as of November, 2021)
+
+Remember to turn on Allow Cookies on your browsers.
+
+## Support desk coverage version
+
+Please read [Developer guidelines](https://mbaas.nifcloud.com/doc/current/common/dev_guide.html#SDK%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6).
+
+- v3.1.1 ～ (※as of November, 2021)
 
 ## Install
 
@@ -248,7 +276,7 @@ $ browserify -r -p licensify -t [ uglifyify -x .js ] -o ncmb.min.js lib/ncmb.js
 ## For Developer
 
 ```shell
-$ git clone XXX
+$ git clone https://github.com/NIFCLOUD-mbaas/ncmb_js
 $ cd ncmb_js
 $ npm install
 $ npm test
@@ -257,6 +285,56 @@ $ npm test
 npm test is not working on default Windows OS environment.
 If you want to do that, please setup nohup command.
 
+## Automated Test On Frontend
+1. Generate test files
+```shell
+$ npm run build                 # if library is updated, frontend test need to update ncmb.min.js
+$ npm run test:frontend:modules # run only once at the first time
+$ npm run test:frontend:prepare # generate test files at test/frontend/www
+```
+2. Make app on mBaaS
+3. Change anonymous user flag from disable to enable in application setting page
+4. Files exists as below after npm commands
+5. Set Appkey and Secretkey in config.js
+6. Run index.html on browser
+7. Run application in Monaca (Upload files as below)
+
+#### Directory Structure On Browser
+```
+(Any directory)/
+ ├ index.html
+ ├ ncmb.min.js
+ ├ ncmb.test.full.js
+ ├ config.js
+ └css/
+   └mocha.css
+```
+
+#### Directory Structure On Monaca
+```
+www/
+ ├ index.html //overwrite
+ ├ ncmb.min.js
+ ├ ncmb.test.full.js
+ ├ config.js
+ └css/
+   └mocha.css
+```
+
+## Create SDK Document
+
+Run `npm run document:generate` command, then documents has created in `jsdoc` directory.
+
+## Dependency
+  Please refer to Dependencies part in package.json for details.
+
+## References
+
+- [ニフクラ mobile backend](https://mbaas.nifcloud.com/)
+- [SDKの詳細な使い方](https://mbaas.nifcloud.com/doc/current/)
+- [サンプル＆チュートリアル](https://mbaas.nifcloud.com/doc/current/tutorial/tutorial_javascript.html)
+- [ユーザーコミュニティ](https://github.com/NIFCLOUD-mbaas/UserCommunity)
+
 ## License
 
-Please read [LICENSE](git://github.com/NIFTYCloud-mbaas/ncmb_js/blob/master/LICENSE).
+Please read [LICENSE](https://github.com/NIFCLOUD-mbaas/ncmb_js/blob/master/LICENSE).

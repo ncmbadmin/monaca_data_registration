@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
     <script>
-        var appKey    = "YOUR_APPKEY";
-        var clientKey = "YOUR_KEY";
-        var ncmb = new NCMB(appKey, clientKey);
+        // API key.
+        var applicationKey    = "YOUR_NCMB_APPLICATION_KEY";
+        var clientKey = "YOUR_NCMB_CLIENT_KEY";
+        // SDK initialization.
+        var ncmb = new NCMB(applicationKey, clientKey);
 
         function startDemo() {
             var TestClass = ncmb.DataStore("TestClass");
@@ -18,20 +20,20 @@
             var value = "Hello, NCMB!";
             testClass.set(key, value);
             testClass.save()
-                .then(function() {
-                    // 保存完了後に実行される
+                .then(function(testClass) {
+                    // Save success.
                     alert("New object created with objectId: " + testClass.objectId);
                 })
                 .catch(function(error) {
-                    // エラー時に実行される
+                    // Save failed.
                     alert("Failed to create new object, with error code: " + error.text);
                 });
         }
     </script>
 </head>
 <body>
-    <h1>NiftyCloud mobile backend!</h1>
-    <a class="button--large" onclick="startDemo()">Start Demo</a>
+    <h1>NIFCLOUD<br>mobile backend!</h1>
+    <a class="button--large" onclick="startDemo()">Start Demo</a><br>
     <div>Touch Start Demo to save {"message":"Hello, NCMB!"} to mobile backend.</div>
 </body>
 </html>
